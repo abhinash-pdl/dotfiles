@@ -56,3 +56,4 @@
 *.DS_Store
 *.directory
 .config/Code/CachedExtensionVSIXs/
+.config/vesktop/sessionData/
