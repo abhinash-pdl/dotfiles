@@ -1,0 +1,18 @@
+[Unit]
+Description=FFmpeg PipeWire screen recorder service (per-user)
+
+[Service]
+Type=simple
+ExecStart=/home/avinas/.config/hypr/additional/ffmpeg-pipewire-record.sh
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
+RestartSec=10
+
+[Unit]
+# Limit rapid restart attempts
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Install]
+WantedBy=default.target

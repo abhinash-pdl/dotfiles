@@ -1,0 +1,74 @@
+2025-10-09 14:31:12.512 [info] (Client) Pylance client (2025.8.3) started with python extension (2025.14.0)
+2025-10-09 14:31:14.574 [info] (11325) Server root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:31:14.575 [info] (11325) Pylance language server 2025.8.3 (pyright version 1.1.405, commit d64f3fa0) starting
+2025-10-09 14:31:14.582 [info] (11325) Starting service instance "code" for workspace "/home/avinas/code"
+2025-10-09 14:31:14.586 [info] (11325) Starting service instance "hypr" for workspace "/home/avinas/.config/hypr"
+2025-10-09 14:31:14.587 [info] (11325) Starting service instance "waybar" for workspace "/etc/xdg/waybar"
+2025-10-09 14:31:14.587 [info] (11325) Starting service instance ".config" for workspace "/home/avinas/.config"
+2025-10-09 14:31:14.823 [info] (11325) Setting environmentName for service "code": "3.13.7 (.venv venv)"
+2025-10-09 14:31:14.823 [info] (11325) Setting pythonPath for service "code": "/home/avinas/code/.venv/bin/python"
+2025-10-09 14:31:14.824 [info] (11325) No include entries specified; assuming /home/avinas/code
+2025-10-09 14:31:14.825 [info] (11325) Auto-excluding **/node_modules
+2025-10-09 14:31:14.826 [info] (11325) Auto-excluding **/__pycache__
+2025-10-09 14:31:14.826 [info] (11325) Auto-excluding **/.*
+2025-10-09 14:31:14.870 [info] (11325) Assuming Python version 3.13.7.final.0
+2025-10-09 14:31:14.963 [info] (11325) Setting environmentName for service "hypr": "3.13.7 (global)"
+2025-10-09 14:31:14.963 [info] (11325) Setting pythonPath for service "hypr": "/bin/python"
+2025-10-09 14:31:14.963 [info] (11325) No include entries specified; assuming /home/avinas/.config/hypr
+2025-10-09 14:31:14.964 [info] (11325) Auto-excluding **/node_modules
+2025-10-09 14:31:14.964 [info] (11325) Auto-excluding **/__pycache__
+2025-10-09 14:31:14.964 [info] (11325) Auto-excluding **/.*
+2025-10-09 14:31:15.013 [info] (11325) Assuming Python version 3.13.7.final.0
+2025-10-09 14:31:15.115 [info] (11325) No source files found.
+2025-10-09 14:31:15.201 [info] (11325) Setting environmentName for service "waybar": "3.13.7 (global)"
+2025-10-09 14:31:15.202 [info] (11325) Setting pythonPath for service "waybar": "/bin/python"
+2025-10-09 14:31:15.205 [info] (11325) No include entries specified; assuming /etc/xdg/waybar
+2025-10-09 14:31:15.207 [info] (11325) Auto-excluding **/node_modules
+2025-10-09 14:31:15.211 [info] (11325) Auto-excluding **/__pycache__
+2025-10-09 14:31:15.211 [info] (11325) Auto-excluding **/.*
+2025-10-09 14:31:15.264 [info] (11325) Assuming Python version 3.13.7.final.0
+2025-10-09 14:31:15.435 [info] (11325) No source files found.
+2025-10-09 14:31:15.500 [info] (11325) Setting environmentName for service ".config": "3.13.7 (.venv venv)"
+2025-10-09 14:31:15.500 [info] (11325) Setting pythonPath for service ".config": "/home/avinas/code/.venv/bin/python"
+2025-10-09 14:31:15.500 [info] (11325) No include entries specified; assuming /home/avinas/.config
+2025-10-09 14:31:15.503 [info] (11325) Auto-excluding **/node_modules
+2025-10-09 14:31:15.504 [info] (11325) Auto-excluding **/__pycache__
+2025-10-09 14:31:15.504 [info] (11325) Auto-excluding **/.*
+2025-10-09 14:31:15.567 [info] (11325) Assuming Python version 3.13.7.final.0
+2025-10-09 14:31:15.784 [info] (11325) No source files found.
+2025-10-09 14:31:16.656 [info] (11325) Found 13 source files
+2025-10-09 14:31:16.817 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:16.902 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:16.942 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:16.963 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:16.964 [info] (11325) Starting service instance "<default>" for workspace ""
+2025-10-09 14:31:17.296 [info] (11325) Setting environmentName for service "<default>": "3.13.7 (.venv venv)"
+2025-10-09 14:31:17.315 [info] (11325) Setting pythonPath for service "<default>": "/home/avinas/code/.venv/bin/python"
+2025-10-09 14:31:17.315 [info] (11325) No include entries specified; assuming /<default workspace root>
+2025-10-09 14:31:17.316 [info] (11325) Auto-excluding **/node_modules
+2025-10-09 14:31:17.316 [info] (11325) Auto-excluding **/__pycache__
+2025-10-09 14:31:17.316 [info] (11325) Auto-excluding **/.*
+2025-10-09 14:31:17.414 [info] (11325) Assuming Python version 3.13.7.final.0
+2025-10-09 14:31:18.136 [error] (11325) File or directory "/<default workspace root>" does not exist.
+2025-10-09 14:31:18.150 [info] (11325) No source files found.
+2025-10-09 14:31:19.165 [info] (11325) BG: Priority queue background worker(2) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:31:19.169 [info] (11325) BG: Priority queue background worker(2) started
+2025-10-09 14:31:20.352 [info] (11325) BG: Priority queue background worker(4) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:31:20.367 [info] (11325) BG: Priority queue background worker(4) started
+2025-10-09 14:31:20.674 [info] (11325) BG: Priority queue background worker(6) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:31:20.681 [info] (11325) BG: Priority queue background worker(6) started
+2025-10-09 14:31:21.128 [info] (11325) BG: Priority queue background worker(8) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:31:21.132 [info] (11325) BG: Priority queue background worker(8) started
+2025-10-09 14:31:21.836 [info] (11325) BG: Priority queue background worker(10) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:31:21.836 [info] (11325) BG: Priority queue background worker(10) started
+2025-10-09 14:31:37.426 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.428 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.428 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.429 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.429 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.429 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.430 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.430 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.430 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:37.432 [info] (11325) Settings have not changed. Skipping update.
+2025-10-09 14:31:56.695 [info] (11325) Starting Mcp server id:4177 ...

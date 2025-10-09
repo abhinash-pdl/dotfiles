@@ -1,0 +1,13 @@
+2025-10-09 14:00:38.243 [error] #24: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-10-09 14:05:48.256 [error] #56: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-10-09 14:10:58.261 [error] #85: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-10-09 14:12:55.550 [error] #108: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2025-10-09 14:12:57.961 [error] #109: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2025-10-09 14:16:08.265 [error] #129: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-10-09 14:18:48.203 [error] #145: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2025-10-09 14:18:51.811 [error] #146: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
+2025-10-09 14:21:18.270 [error] #162: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-10-09 14:23:21.831 [error] #174: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_TIMED_OUT
+2025-10-09 14:26:28.276 [error] #189: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-10-09 14:28:05.554 [error] #194: https://vscode-sync.trafficmanager.net/v1/manifest - error GET net::ERR_TIMED_OUT
+2025-10-09 14:28:43.757 [error] #195: https://vscode-sync.trafficmanager.net/v1/manifest - error GET net::ERR_TIMED_OUT

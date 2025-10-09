@@ -1,0 +1,23 @@
+[Unit]
+Description=Mako notification daemon (per-user)
+After=dbus-user-session.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mako
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+[Unit]
+Description=Mako notification daemon (user)
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mako
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

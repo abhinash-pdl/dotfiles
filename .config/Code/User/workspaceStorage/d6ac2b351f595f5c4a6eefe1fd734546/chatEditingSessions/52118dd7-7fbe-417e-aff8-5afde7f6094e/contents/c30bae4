@@ -1,0 +1,9 @@
+# Path to wallpapers directory (individual files may be preloaded or set by IPC)
+wallpapers = /home/avinas/Pictures/wallpapers
+
+# Cycle interval in seconds (hyprpaper builtin cycling; set to 300 = 5 minutes)
+cycle_interval = 300
+
+# Wallpaper mode (fill, fit, center, stretch)
+mode = fill
+

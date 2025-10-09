@@ -1,0 +1,97 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "002a478e263219f904394bcc06e8db30de50e8995ca85dcf02bba5dbad691a02",
+    "telemetry.devDeviceId": "323c98d2-f49a-44b5-abe9-09574b5b794f",
+    "backupWorkspaces": {
+        "workspaces": [
+            {
+                "id": "d6ac2b351f595f5c4a6eefe1fd734546",
+                "configURIPath": "file:///home/avinas/.config/Code/Workspaces/1759936914494/workspace.json"
+            }
+        ],
+        "folders": [],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///etc/xdg/waybar": "__default__profile__",
+            "file:///home/avinas/.config/hypr": "__default__profile__",
+            "file:///home/avinas/.config/wofi": "__default__profile__",
+            "file:///home/avinas/code": "__default__profile__",
+            "file:///home/avinas/.config/Code/Workspaces/1759936914494/workspace.json": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "workspaceIdentifier": {
+                "id": "d6ac2b351f595f5c4a6eefe1fd734546",
+                "configURIPath": "file:///home/avinas/.config/Code/Workspaces/1759936914494/workspace.json"
+            },
+            "backupPath": "/home/avinas/.config/Code/Backups/d6ac2b351f595f5c4a6eefe1fd734546",
+            "uiState": {
+                "mode": 1,
+                "x": 7,
+                "y": 37,
+                "width": 1906,
+                "height": 1036
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#0b012e",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#0b012e",
+            "editorBackground": "#0b012e",
+            "titleBarBackground": "#0000dd",
+            "activityBarBackground": "#000000",
+            "sideBarBackground": "#1f1f1f",
+            "statusBarBackground": "#000080",
+            "statusBarNoFolderBackground": "#68217a"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 428,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 428,
+            "workspaces": {
+                "a55f8cd98236a3d97ed59bd407df3af1": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "c42e57846d91f27b63485c506bafc7f6": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "641b16eb8929fa870059c0a01eef1c55": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "d057cd1a5d6d6ebe55d3b65661039451": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "d6ac2b351f595f5c4a6eefe1fd734546": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}

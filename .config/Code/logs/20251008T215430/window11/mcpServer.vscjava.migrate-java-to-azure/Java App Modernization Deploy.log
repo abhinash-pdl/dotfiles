@@ -1,0 +1,8 @@
+2025-10-08 23:43:14.364 [info] Starting server Java App Modernization Deploy
+2025-10-08 23:43:14.364 [info] Connection state: Starting
+2025-10-08 23:43:14.364 [info] Starting server from LocalProcess extension host
+2025-10-08 23:43:14.370 [info] Connection state: Starting
+2025-10-08 23:43:14.370 [info] Connection state: Running
+2025-10-08 23:43:17.467 [warning] Failed to parse message: "MCP server connected successfully.\n"
+2025-10-08 23:43:17.467 [warning] Failed to parse message: "MCP server is running. Press Ctrl+C to exit.\n"
+2025-10-08 23:43:17.479 [info] Discovered 10 tools

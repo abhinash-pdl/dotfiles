@@ -1,0 +1,206 @@
+2025-10-09 13:55:37.649 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-10-09 13:55:37.649 [info] Using the Electron fetcher.
+2025-10-09 13:55:37.649 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-10-09 13:55:37.649 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-10-09 13:55:37.649 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-10-09 13:55:37.964 [info] Logged in as Abinash161
+2025-10-09 13:55:38.745 [info] FetcherService: electron-fetch succeeded
+2025-10-09 13:55:39.067 [info] FetcherService: electron-fetch succeeded
+2025-10-09 13:55:39.070 [info] Got Copilot token for Abinash161
+2025-10-09 13:55:40.232 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-10-09 13:55:40.268 [info] Registering default platform agent...
+2025-10-09 13:55:40.274 [info] activationBlocker from 'conversationFeature' took for 113ms
+2025-10-09 13:55:40.394 [info] activationBlocker from 'languageModelAccess' took for 230ms
+2025-10-09 13:55:40.766 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary,text-embedding-3-small-512. Deprecated: 
+2025-10-09 13:55:40.772 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary,text-embedding-3-small-512. Deprecated: 
+2025-10-09 13:55:40.772 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2025-10-09 13:55:41.270 [info] Fetched model metadata in 991ms 4e6a139e-e772-4bac-9c50-bf4b858f19cd
+2025-10-09 13:55:41.686 [info] Latest entry: ccreq:latest.copilotmd
+2025-10-09 13:55:41.688 [info] ccreq:209c760a.copilotmd | markdown
+2025-10-09 13:55:42.578 [info] Fetched auto model in 531ms.
+2025-10-09 14:04:15.889 [info] ccreq:c4edd389.copilotmd | cancelled | gpt-5-mini | 21743ms | [panel/editAgent]
+2025-10-09 14:05:04.307 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:05:04.307 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:05:04.315 [info] ccreq:19df0771.copilotmd | success | gpt-5-mini | 24360ms | [panel/editAgent]
+2025-10-09 14:05:04.567 [info] [ConversationHistorySummarizer] [full] summarization prompt rendered in 90ms.
+2025-10-09 14:05:59.563 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:05:59.563 [info] request done: requestId: [66f4ce65-ea9c-4a85-8073-7c9a34f643d5] model deployment ID: []
+2025-10-09 14:05:59.566 [info] ccreq:c450f0bd.copilotmd | success | gpt-5-mini | 54998ms | [summarizeConversationHistory-full]
+2025-10-09 14:06:00.104 [error] Error: No lowest priority node found (path: i0 -> gQ -> p_e -> O2e -> ga -> (anonymous) -> (anonymous) -> qz -> 3)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3790)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at P2e (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:3:3906)
+    at t.removeLowestPriorityChild (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1:9653)
+    at xt._getFinalElementTree (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:4:30771)
+    at xt.renderRaw (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:4:29315)
+    at xt.render (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:4:28978)
+    at xt.render (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:612:5670)
+    at mx.buildPrompt (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1193:2305)
+    at zte.buildPrompt (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1170:23195)
+    at zte.buildPrompt2 (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1089:23504)
+    at zte.runOne (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1089:19490)
+    at zte.run (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1089:16897)
+    at by.runWithToolCalling (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1170:16420)
+    at by.getResult (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1170:11792)
+    at nre.getResult (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1182:5409)
+    at wk.getResult (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:1205:9176)
+    at L8.y (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:2925:1592)
+    at Qh.$invokeAgent (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:140:47267): [Agent] summarization failed
+2025-10-09 14:06:12.746 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:06:12.747 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:06:12.750 [info] ccreq:e201eac1.copilotmd | success | gpt-5-mini | 9248ms | [panel/editAgent]
+2025-10-09 14:06:15.102 [info] [ConversationHistorySummarizer] [full] summarization prompt rendered in 175ms.
+2025-10-09 14:07:22.545 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:07:22.545 [info] request done: requestId: [5831ed82-e953-4376-be6c-66bb52839de7] model deployment ID: []
+2025-10-09 14:07:22.548 [info] ccreq:c8c5ca63.copilotmd | success | gpt-5-mini | 67445ms | [summarizeConversationHistory-full]
+2025-10-09 14:07:23.480 [info] Fetched model metadata in 449ms de14be43-bdb5-478a-880d-514bac8732b2
+2025-10-09 14:07:23.529 [info] ccreq:e9c8c256.copilotmd | markdown
+2025-10-09 14:07:29.156 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:07:29.156 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:07:29.162 [info] ccreq:4cd4e5d0.copilotmd | success | gpt-5-mini | 5610ms | [panel/editAgent]
+2025-10-09 14:07:35.296 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:07:35.296 [info] request done: requestId: [a4f26922-d156-4c49-8491-a28ca9cc76a8] model deployment ID: []
+2025-10-09 14:07:35.300 [info] ccreq:318d34c7.copilotmd | success | gpt-4o-mini | 6049ms | [healApplyPatch]
+2025-10-09 14:07:38.862 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:07:38.862 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:07:38.865 [info] ccreq:6f1a5e97.copilotmd | success | gpt-5-mini | 3512ms | [panel/editAgent]
+2025-10-09 14:07:52.293 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:07:52.293 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:07:52.296 [info] ccreq:7c0f7ce7.copilotmd | success | gpt-5-mini | 13316ms | [panel/editAgent]
+2025-10-09 14:07:57.594 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:07:57.594 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:07:57.598 [info] ccreq:429c5de9.copilotmd | success | gpt-5-mini | 3198ms | [panel/editAgent]
+2025-10-09 14:08:10.730 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:08:10.730 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:08:10.732 [info] ccreq:6330a2d2.copilotmd | success | gpt-5-mini | 5346ms | [panel/editAgent]
+2025-10-09 14:08:22.073 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:08:22.073 [info] request done: requestId: [bd088fb9-ff6d-4950-960d-49191b4f0e13] model deployment ID: []
+2025-10-09 14:08:22.077 [info] ccreq:bbf02fe7.copilotmd | success | gpt-5-mini | 11081ms | [panel/editAgent]
+2025-10-09 14:10:48.909 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:10:48.910 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:10:48.920 [info] ccreq:0a3381a3.copilotmd | success | gpt-5-mini | 47468ms | [panel/editAgent]
+2025-10-09 14:10:54.767 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:10:54.768 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:10:54.774 [info] ccreq:057fa193.copilotmd | success | gpt-5-mini | 3173ms | [panel/editAgent]
+2025-10-09 14:11:01.096 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:11:01.096 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:11:01.100 [info] ccreq:377777ae.copilotmd | success | gpt-5-mini | 3839ms | [panel/editAgent]
+2025-10-09 14:11:07.039 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:11:07.039 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:11:07.043 [info] ccreq:e5e23bee.copilotmd | success | gpt-5-mini | 5773ms | [panel/editAgent]
+2025-10-09 14:11:13.305 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:11:13.305 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:11:13.310 [info] ccreq:f766ed63.copilotmd | success | gpt-5-mini | 4078ms | [panel/editAgent]
+2025-10-09 14:11:18.040 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:11:18.040 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:11:18.048 [info] ccreq:132de916.copilotmd | success | gpt-5-mini | 4663ms | [panel/editAgent]
+2025-10-09 14:11:25.214 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:11:25.214 [info] request done: requestId: [cf6ea299-9b76-4637-a74d-21dc2c3de3e4] model deployment ID: []
+2025-10-09 14:11:25.217 [info] ccreq:92ecd83c.copilotmd | success | gpt-4o-mini | 984ms | [copilotLanguageModelWrapper]
+2025-10-09 14:11:35.027 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:11:35.027 [info] request done: requestId: [8aec3eb0-f185-4520-b63a-34c47bfc7b46] model deployment ID: []
+2025-10-09 14:11:35.028 [info] ccreq:4ff22af5.copilotmd | success | gpt-4o-mini | 9598ms | [copilotLanguageModelWrapper]
+2025-10-09 14:11:35.344 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:11:35.344 [info] request done: requestId: [f292b67d-044c-4ce3-b020-5b81041e0f89] model deployment ID: []
+2025-10-09 14:11:35.346 [info] ccreq:a678cd05.copilotmd | success | gpt-5-mini | 8468ms | [panel/editAgent]
+2025-10-09 14:13:51.078 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:13:51.078 [info] request done: requestId: [28d72af9-663b-4a14-aee4-b7e28b7371bd] model deployment ID: []
+2025-10-09 14:13:51.082 [info] ccreq:41a7ca36.copilotmd | success | gpt-5-mini | 27438ms | [panel/editAgent]
+2025-10-09 14:13:59.987 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:13:59.987 [info] request done: requestId: [28d72af9-663b-4a14-aee4-b7e28b7371bd] model deployment ID: []
+2025-10-09 14:13:59.996 [info] ccreq:02140b28.copilotmd | success | gpt-5-mini | 4484ms | [panel/editAgent]
+2025-10-09 14:14:05.117 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:14:05.117 [info] request done: requestId: [f944afdf-9540-494d-95aa-5c35cbd5e4a0] model deployment ID: []
+2025-10-09 14:14:05.120 [info] ccreq:05f86d7e.copilotmd | success | gpt-4o-mini | 594ms | [copilotLanguageModelWrapper]
+2025-10-09 14:14:06.680 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:14:06.680 [info] request done: requestId: [48edc7da-dd47-49d8-9e38-ebacbeaf98b8] model deployment ID: []
+2025-10-09 14:14:06.682 [info] ccreq:6c88f6c1.copilotmd | success | gpt-4o-mini | 1463ms | [copilotLanguageModelWrapper]
+2025-10-09 14:14:57.847 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:14:57.847 [info] request done: requestId: [28d72af9-663b-4a14-aee4-b7e28b7371bd] model deployment ID: []
+2025-10-09 14:14:57.848 [info] ccreq:2b14e431.copilotmd | success | gpt-5-mini | 7729ms | [panel/editAgent]
+2025-10-09 14:16:55.453 [info] Logged in as Abinash161
+2025-10-09 14:16:56.226 [info] FetcherService: electron-fetch succeeded
+2025-10-09 14:16:56.560 [info] FetcherService: electron-fetch succeeded
+2025-10-09 14:16:56.561 [info] Got Copilot token for Abinash161
+2025-10-09 14:16:56.591 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-10-09 14:16:56.593 [info] [code-referencing] Public code references are enabled.
+2025-10-09 14:16:58.361 [info] Fetched model metadata in 1772ms b550e50a-b835-40d0-aece-34151b96ee0c
+2025-10-09 14:16:58.368 [info] ccreq:c0514931.copilotmd | markdown
+2025-10-09 14:17:39.460 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:17:39.460 [info] request done: requestId: [f19ad37b-4c37-46b8-a43e-913746e59d7d] model deployment ID: []
+2025-10-09 14:17:39.462 [info] ccreq:36740f39.copilotmd | success | gpt-5-mini | 44039ms | [panel/editAgent]
+2025-10-09 14:17:50.400 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:17:50.400 [info] request done: requestId: [f19ad37b-4c37-46b8-a43e-913746e59d7d] model deployment ID: []
+2025-10-09 14:17:50.402 [info] ccreq:05edc431.copilotmd | success | gpt-5-mini | 3680ms | [panel/editAgent]
+2025-10-09 14:17:56.834 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:17:56.834 [info] request done: requestId: [4644f119-8c75-4a7c-87ca-15dd89a0ae31] model deployment ID: []
+2025-10-09 14:17:56.836 [info] ccreq:eaab5ef9.copilotmd | success | gpt-4o-mini | 2255ms | [copilotLanguageModelWrapper]
+2025-10-09 14:17:58.987 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:17:58.987 [info] request done: requestId: [a2174d52-cc05-4f6e-bb97-2fa895b95c49] model deployment ID: []
+2025-10-09 14:17:58.989 [info] ccreq:4d40a12e.copilotmd | success | gpt-4o-mini | 2115ms | [copilotLanguageModelWrapper]
+2025-10-09 14:18:20.644 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:18:20.644 [info] request done: requestId: [f19ad37b-4c37-46b8-a43e-913746e59d7d] model deployment ID: []
+2025-10-09 14:18:20.653 [info] ccreq:61e486e1.copilotmd | success | gpt-5-mini | 18322ms | [panel/editAgent]
+2025-10-09 14:18:29.225 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:18:29.225 [info] request done: requestId: [f19ad37b-4c37-46b8-a43e-913746e59d7d] model deployment ID: []
+2025-10-09 14:18:29.231 [info] ccreq:8218507a.copilotmd | success | gpt-5-mini | 4062ms | [panel/editAgent]
+2025-10-09 14:18:34.720 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:18:34.721 [info] request done: requestId: [f19ad37b-4c37-46b8-a43e-913746e59d7d] model deployment ID: []
+2025-10-09 14:18:34.722 [info] ccreq:bec3d2e7.copilotmd | success | gpt-5-mini | 3472ms | [panel/editAgent]
+2025-10-09 14:18:46.663 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:18:46.663 [info] request done: requestId: [f19ad37b-4c37-46b8-a43e-913746e59d7d] model deployment ID: []
+2025-10-09 14:18:46.664 [info] ccreq:dd3c4919.copilotmd | success | gpt-5-mini | 9419ms | [panel/editAgent]
+2025-10-09 14:19:58.412 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:19:58.412 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:19:58.418 [info] ccreq:76dd39f6.copilotmd | success | gpt-5-mini | 22221ms | [panel/editAgent]
+2025-10-09 14:20:08.226 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:20:08.227 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:20:08.234 [info] ccreq:640580bb.copilotmd | success | gpt-5-mini | 9167ms | [panel/editAgent]
+2025-10-09 14:20:18.870 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:20:18.871 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:20:18.872 [info] ccreq:433dbd62.copilotmd | success | gpt-5-mini | 6712ms | [panel/editAgent]
+2025-10-09 14:20:30.786 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:20:30.786 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:20:30.790 [info] ccreq:68ea50d5.copilotmd | success | gpt-5-mini | 11657ms | [panel/editAgent]
+2025-10-09 14:20:44.888 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:20:44.888 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:20:44.890 [info] ccreq:4f3548a7.copilotmd | success | gpt-5-mini | 9418ms | [panel/editAgent]
+2025-10-09 14:20:52.867 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:20:52.867 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:20:52.870 [info] ccreq:9059d7ce.copilotmd | success | gpt-5-mini | 4432ms | [panel/editAgent]
+2025-10-09 14:21:01.289 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:21:01.289 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:21:01.290 [info] ccreq:0e6cc387.copilotmd | success | gpt-5-mini | 8310ms | [panel/editAgent]
+2025-10-09 14:21:10.888 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:21:10.888 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:21:10.901 [info] ccreq:27020e7e.copilotmd | success | gpt-5-mini | 5291ms | [panel/editAgent]
+2025-10-09 14:21:18.837 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:21:18.837 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:21:18.839 [info] ccreq:e4d47275.copilotmd | success | gpt-5-mini | 5493ms | [panel/editAgent]
+2025-10-09 14:21:28.763 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:21:28.763 [info] request done: requestId: [be5b07c8-6e00-4ad1-832c-235430de3208] model deployment ID: []
+2025-10-09 14:21:28.765 [info] ccreq:f36cec33.copilotmd | success | gpt-5-mini | 8391ms | [panel/editAgent]
+2025-10-09 14:24:30.404 [info] request done: requestId: [d57ba1cd-f621-4c32-b08e-9c58c1ef54e5] model deployment ID: []
+2025-10-09 14:24:30.412 [info] ccreq:98106081.copilotmd | cancelled | gpt-5-mini | 40590ms | [panel/editAgent]
+2025-10-09 14:26:07.768 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:26:07.768 [info] request done: requestId: [6820a0f7-2a24-4b9c-9cbc-16ec49db9b2e] model deployment ID: []
+2025-10-09 14:26:07.772 [info] ccreq:5d9bc5f6.copilotmd | success | gpt-5-mini | 87146ms | [panel/editAgent]
+2025-10-09 14:26:24.491 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:26:24.491 [info] request done: requestId: [6820a0f7-2a24-4b9c-9cbc-16ec49db9b2e] model deployment ID: []
+2025-10-09 14:26:24.493 [info] ccreq:10d67523.copilotmd | success | gpt-5-mini | 9767ms | [panel/editAgent]
+2025-10-09 14:27:07.496 [info] message 0 returned. finish reason: [tool_calls]
+2025-10-09 14:27:07.496 [info] request done: requestId: [6820a0f7-2a24-4b9c-9cbc-16ec49db9b2e] model deployment ID: []
+2025-10-09 14:27:08.090 [info] ccreq:91339f5f.copilotmd | success | gpt-5-mini | 36987ms | [panel/editAgent]
+2025-10-09 14:27:11.713 [info] Fetched model metadata in 3620ms 4171ef52-5d86-4799-bc23-5a95b8cd9586
+2025-10-09 14:27:11.917 [info] ccreq:52a9af3b.copilotmd | markdown
+2025-10-09 14:28:36.510 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:28:36.510 [info] request done: requestId: [6820a0f7-2a24-4b9c-9cbc-16ec49db9b2e] model deployment ID: []
+2025-10-09 14:28:36.511 [info] ccreq:1e4698ff.copilotmd | success | gpt-5-mini | 81564ms | [panel/editAgent]
+2025-10-09 14:29:05.431 [info] message 0 returned. finish reason: [stop]
+2025-10-09 14:29:05.431 [info] request done: requestId: [d452dca6-dfa0-4277-af6f-c9986f5449b1] model deployment ID: []
+2025-10-09 14:29:05.445 [info] ccreq:a9ee8e2d.copilotmd | success | gpt-5-mini | 21276ms | [panel/editAgent]

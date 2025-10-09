@@ -1,0 +1,37 @@
+# Mako configuration - tasteful, compact notifications
+# See https://emersion.github.io/mako/ for options
+
+font=Inter 11
+default-timeout=4000
+
+# Window geometry
+width=360
+margin=12
+anchor=top-right
+offset-x=12
+offset-y=12
+
+# Rounded corners and shadows
+border-color=#00000000
+border-size=0
+background=#0f1117cc
+# Mako configuration - minimal and compatible
+# See https://emersion.github.io/mako/ for available options
+
+# Font and appearance
+font=Inter 11
+background=#0f1117cc
+text-color=#e6eef6
+border-color=#00000000
+border-size=0
+border-radius=10
+
+# Positioning and geometry
+anchor=top-right
+margin=12
+spacing=8
+max-visible=4
+
+# Behavior
+timeout=4000
+markup=true

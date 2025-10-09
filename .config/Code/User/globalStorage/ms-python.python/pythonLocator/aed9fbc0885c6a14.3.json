@@ -1,0 +1,14 @@
+{
+  "environment": {
+    "executable": "/home/avinas/code/.venv/bin/python",
+    "prefix": "/home/avinas/code/.venv",
+    "version": "3.13.7.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/home/avinas/code/.venv/bin/python",
+      "/home/avinas/code/.venv/bin/python3",
+      "/home/avinas/code/.venv/bin/python3.13"
+    ]
+  },
+  "symlinks": []
+}

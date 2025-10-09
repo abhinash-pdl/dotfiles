@@ -1,0 +1,10 @@
+[Unit]
+Description=wf-recorder screen recorder service (per-user)
+
+[Service]
+Type=simple
+ExecStart=/home/avinas/.config/hypr/additional/wf-recorder-start.sh
+Restart=no
+
+[Install]
+WantedBy=default.target

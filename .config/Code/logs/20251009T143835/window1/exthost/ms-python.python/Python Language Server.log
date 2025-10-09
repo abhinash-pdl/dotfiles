@@ -1,0 +1,52 @@
+2025-10-09 14:38:52.931 [info] (Client) Pylance client (2025.8.3) started with python extension (2025.14.0)
+2025-10-09 14:38:54.883 [info] (1870) Server root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:38:54.884 [info] (1870) Pylance language server 2025.8.3 (pyright version 1.1.405, commit d64f3fa0) starting
+2025-10-09 14:38:54.891 [info] (1870) Starting service instance "code" for workspace "/home/avinas/code"
+2025-10-09 14:38:54.895 [info] (1870) Starting service instance "hypr" for workspace "/home/avinas/.config/hypr"
+2025-10-09 14:38:54.896 [info] (1870) Starting service instance "waybar" for workspace "/etc/xdg/waybar"
+2025-10-09 14:38:54.896 [info] (1870) Starting service instance ".config" for workspace "/home/avinas/.config"
+2025-10-09 14:38:55.099 [info] (1870) Starting Mcp server id:3235 ...
+2025-10-09 14:38:55.138 [info] (1870) Setting environmentName for service "code": "3.13.7 (.venv venv)"
+2025-10-09 14:38:55.139 [info] (1870) Setting pythonPath for service "code": "/home/avinas/code/.venv/bin/python"
+2025-10-09 14:38:55.139 [info] (1870) No include entries specified; assuming /home/avinas/code
+2025-10-09 14:38:55.140 [info] (1870) Auto-excluding **/node_modules
+2025-10-09 14:38:55.141 [info] (1870) Auto-excluding **/__pycache__
+2025-10-09 14:38:55.141 [info] (1870) Auto-excluding **/.*
+2025-10-09 14:38:55.200 [info] (1870) Assuming Python version 3.13.7.final.0
+2025-10-09 14:38:55.392 [info] (1870) No source files found.
+2025-10-09 14:38:55.438 [info] (1870) Setting environmentName for service "hypr": "3.13.7 (global)"
+2025-10-09 14:38:55.440 [info] (1870) Setting pythonPath for service "hypr": "/bin/python"
+2025-10-09 14:38:55.441 [info] (1870) No include entries specified; assuming /home/avinas/.config/hypr
+2025-10-09 14:38:55.441 [info] (1870) Auto-excluding **/node_modules
+2025-10-09 14:38:55.441 [info] (1870) Auto-excluding **/__pycache__
+2025-10-09 14:38:55.441 [info] (1870) Auto-excluding **/.*
+2025-10-09 14:38:55.509 [info] (1870) Assuming Python version 3.13.7.final.0
+2025-10-09 14:38:55.692 [info] (1870) Setting environmentName for service "waybar": "3.13.7 (global)"
+2025-10-09 14:38:55.693 [info] (1870) Setting pythonPath for service "waybar": "/bin/python"
+2025-10-09 14:38:55.696 [info] (1870) No include entries specified; assuming /etc/xdg/waybar
+2025-10-09 14:38:55.697 [info] (1870) Auto-excluding **/node_modules
+2025-10-09 14:38:55.701 [info] (1870) Auto-excluding **/__pycache__
+2025-10-09 14:38:55.708 [info] (1870) Auto-excluding **/.*
+2025-10-09 14:38:55.794 [info] (1870) Assuming Python version 3.13.7.final.0
+2025-10-09 14:38:56.028 [info] (1870) No source files found.
+2025-10-09 14:38:56.074 [info] (1870) Settings have not changed. Skipping update.
+2025-10-09 14:38:56.077 [info] (1870) No source files found.
+2025-10-09 14:38:56.138 [info] (1870) Settings have not changed. Skipping update.
+2025-10-09 14:38:56.150 [info] (1870) Setting environmentName for service ".config": "3.13.7 (global)"
+2025-10-09 14:38:56.151 [info] (1870) Setting pythonPath for service ".config": "/usr/bin/python"
+2025-10-09 14:38:56.151 [info] (1870) No include entries specified; assuming /home/avinas/.config
+2025-10-09 14:38:56.152 [info] (1870) Auto-excluding **/node_modules
+2025-10-09 14:38:56.155 [info] (1870) Auto-excluding **/__pycache__
+2025-10-09 14:38:56.155 [info] (1870) Auto-excluding **/.*
+2025-10-09 14:38:56.238 [info] (1870) Assuming Python version 3.13.7.final.0
+2025-10-09 14:38:57.070 [info] (1870) Found 13 source files
+2025-10-09 14:38:57.100 [info] (1870) Settings have not changed. Skipping update.
+2025-10-09 14:38:57.249 [info] (1870) Settings have not changed. Skipping update.
+2025-10-09 14:38:58.432 [info] (1870) BG: Priority queue background worker(2) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:38:58.449 [info] (1870) BG: Priority queue background worker(2) started
+2025-10-09 14:38:59.811 [info] (1870) BG: Priority queue background worker(4) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:38:59.815 [info] (1870) BG: Priority queue background worker(4) started
+2025-10-09 14:38:59.911 [info] (1870) BG: Priority queue background worker(6) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:38:59.912 [info] (1870) BG: Priority queue background worker(6) started
+2025-10-09 14:39:00.167 [info] (1870) BG: Priority queue background worker(8) root directory: file:///home/avinas/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-09 14:39:00.175 [info] (1870) BG: Priority queue background worker(8) started

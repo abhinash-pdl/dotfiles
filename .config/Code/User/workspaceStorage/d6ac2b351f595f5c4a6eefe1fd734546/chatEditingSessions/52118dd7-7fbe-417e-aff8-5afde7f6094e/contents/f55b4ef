@@ -1,0 +1,17 @@
+# Window appearance
+font=FiraCode Nerd Font 12
+background-color=#1e1e2e
+foreground-color=#cdd6f4
+border-color=#89b4fa
+border-size=2
+border-radius=10
+padding=10
+
+# Positioning
+position=top-right
+margin=10
+spacing=10
+
+# Behavior
+timeout=10000
+sort=descending

@@ -1,0 +1,84 @@
+2025-10-08 21:46:24.463 [error] ChatSessionStore: Error reading chat session file 1246001d-c569-4aca-ad84-32f9690fb712 Unable to read file '/home/avinas/.config/Code/User/workspaceStorage/d6ac2b351f595f5c4a6eefe1fd734546/chatSessions/1246001d-c569-4aca-ad84-32f9690fb712.json' (Error: Unable to resolve nonexistent file '/home/avinas/.config/Code/User/workspaceStorage/d6ac2b351f595f5c4a6eefe1fd734546/chatSessions/1246001d-c569-4aca-ad84-32f9690fb712.json')
+2025-10-08 21:46:24.627 [info] Started local extension host with pid 9235.
+2025-10-08 21:46:25.320 [info] [Oracle.oracle-java]: Command `workbench.action.debug.run` already registered by Java (Oracle.oracle-java)
+2025-10-08 21:46:25.320 [info] [Oracle.oracle-java]: Command `workbench.action.debug.start` already registered by Java (Oracle.oracle-java)
+2025-10-08 21:46:25.321 [info] [Oracle.oracle-java]: Command `jdk.select.editor.projects` already registered by Java (Oracle.oracle-java)
+2025-10-08 21:46:26.572 [error] [xabikos.JavaScriptSnippets]: Unknown language in `contributes.JavaScriptSnippets.language`. Provided value: vue
+2025-10-08 21:46:27.987 [error] [Extension Host] (node:9235) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-10-08 21:46:28.622 [info] Settings Sync: Account status changed from uninitialized to available
+2025-10-08 21:46:28.772 [info] Auto updating outdated extensions. vadimcn.vscode-lldb
+2025-10-08 21:46:28.773 [info] [perf] Render performance baseline is 59ms
+2025-10-08 21:46:28.777 [error] [Extension Host] Failed to load MSAL binary: Error: Cannot find module './msal-node-runtime'
+Require stack:
+- /opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js
+- /opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js
+	at Module._resolveFilename (node:internal/modules/cjs/loader:1372:15)
+	at n._resolveFilename (node:electron/js2c/utility_init:2:16249)
+	at t._resolveFilename (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22931)
+	at defaultResolveImpl (node:internal/modules/cjs/loader:1028:19)
+	at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1033:22)
+	at Module._load (node:internal/modules/cjs/loader:1182:37)
+	at c._load (node:electron/js2c/node_init:2:17993)
+	at e._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:5984)
+	at t._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22649)
+	at r._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:25551)
+	at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+	at wrapModuleLoad (node:internal/modules/cjs/loader:242:24)
+	at Module.require (node:internal/modules/cjs/loader:1452:12)
+	at Module.require (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:81:36096)
+	at require (node:internal/modules/helpers:135:16)
+	at 7247 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:231600)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 9020 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:526968)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 6244 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:215773)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 3226 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:129004)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 2583 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:105051)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 8428 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:452019)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 5256 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:172891)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at /opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559691
+	at Object.<anonymous> (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559798)
+	at Module._compile (node:internal/modules/cjs/loader:1696:14)
+	at Module._extensions..js (node:internal/modules/cjs/loader:1829:10)
+	at Module.load (node:internal/modules/cjs/loader:1430:32)
+	at Module._load (node:internal/modules/cjs/loader:1253:12)
+	at c._load (node:electron/js2c/node_init:2:17993)
+	at e._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:5984)
+	at t._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22649)
+	at r._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:25551)
+	at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+	at wrapModuleLoad (node:internal/modules/cjs/loader:242:24)
+	at Module.require (node:internal/modules/cjs/loader:1452:12)
+	at Module.require (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:81:36096)
+	at require (node:internal/modules/helpers:135:16)
+	at aJ.Cb (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:240:1253)
+2025-10-08 21:46:32.539 [warning] Failed to update in-progress status for chat session type 'claude-code': Can not find provider for claude-code
+2025-10-08 21:46:35.151 [warning] [LM] Model copilot/gpt-4.1 is already registered. Skipping.
+2025-10-08 21:46:35.151 [warning] [LM] Model copilot/gpt-5-mini is already registered. Skipping.
+2025-10-08 21:46:35.152 [warning] [LM] Model copilot/gpt-5 is already registered. Skipping.
+2025-10-08 21:46:35.152 [warning] [LM] Model copilot/gpt-3.5-turbo is already registered. Skipping.
+2025-10-08 21:46:35.152 [warning] [LM] Model copilot/gpt-4o-mini is already registered. Skipping.
+2025-10-08 21:46:35.152 [warning] [LM] Model copilot/gpt-4 is already registered. Skipping.
+2025-10-08 21:46:35.153 [warning] [LM] Model copilot/gpt-4-0125-preview is already registered. Skipping.
+2025-10-08 21:46:35.153 [warning] [LM] Model copilot/gpt-4o is already registered. Skipping.
+2025-10-08 21:46:35.153 [warning] [LM] Model copilot/o3-mini is already registered. Skipping.
+2025-10-08 21:46:35.154 [warning] [LM] Model copilot/grok-code-fast-1 is already registered. Skipping.
+2025-10-08 21:46:35.154 [warning] [LM] Model copilot/gpt-5-codex is already registered. Skipping.
+2025-10-08 21:46:35.154 [warning] [LM] Model copilot/claude-3.5-sonnet is already registered. Skipping.
+2025-10-08 21:46:35.154 [warning] [LM] Model copilot/claude-3.7-sonnet is already registered. Skipping.
+2025-10-08 21:46:35.155 [warning] [LM] Model copilot/claude-3.7-sonnet-thought is already registered. Skipping.
+2025-10-08 21:46:35.155 [warning] [LM] Model copilot/claude-sonnet-4 is already registered. Skipping.
+2025-10-08 21:46:35.155 [warning] [LM] Model copilot/claude-sonnet-4.5 is already registered. Skipping.
+2025-10-08 21:46:35.156 [warning] [LM] Model copilot/gemini-2.0-flash-001 is already registered. Skipping.
+2025-10-08 21:46:35.156 [warning] [LM] Model copilot/gemini-2.5-pro is already registered. Skipping.
+2025-10-08 21:46:35.157 [warning] [LM] Model copilot/o4-mini is already registered. Skipping.
+2025-10-08 21:46:35.157 [warning] [LM] Model copilot/auto is already registered. Skipping.
+2025-10-08 21:48:36.831 [error] [LanguageModelToolsService#invokeTool] Error from tool copilot_readFile with parameters {"filePath":"/home/avinas/.config/hypr/wallpaper_random.sh","startLine":1,"endLine":400}:
+cannot open file:///home/avinas/.config/hypr/wallpaper_random.sh. Detail: Unable to read file '/home/avinas/.config/hypr/wallpaper_random.sh' (Error: Unable to resolve nonexistent file '/home/avinas/.config/hypr/wallpaper_random.sh'): CodeExpectedError: cannot open file:///home/avinas/.config/hypr/wallpaper_random.sh. Detail: Unable to read file '/home/avinas/.config/hypr/wallpaper_random.sh' (Error: Unable to resolve nonexistent file '/home/avinas/.config/hypr/wallpaper_random.sh')
+    at S9e.$tryOpenDocument (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:528:10721)

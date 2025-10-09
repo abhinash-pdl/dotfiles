@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "/home/avinas/code"
+		},
+		{
+			"path": "/home/avinas/.config/hypr"
+		},
+		{
+			"path": "../../../../../../etc/xdg/waybar"
+		}
+	],
+	"settings": {}
+}

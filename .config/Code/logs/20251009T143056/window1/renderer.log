@@ -1,0 +1,177 @@
+2025-10-09 14:30:59.061 [info] Started local extension host with pid 10660.
+2025-10-09 14:31:00.945 [info] [Oracle.oracle-java]: Command `workbench.action.debug.run` already registered by Java (Oracle.oracle-java)
+2025-10-09 14:31:00.945 [info] [Oracle.oracle-java]: Command `workbench.action.debug.start` already registered by Java (Oracle.oracle-java)
+2025-10-09 14:31:00.946 [info] [Oracle.oracle-java]: Command `jdk.select.editor.projects` already registered by Java (Oracle.oracle-java)
+2025-10-09 14:31:03.426 [error] [Extension Host] (node:10660) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-10-09 14:31:04.143 [error] [xabikos.JavaScriptSnippets]: Unknown language in `contributes.JavaScriptSnippets.language`. Provided value: vue
+2025-10-09 14:31:06.245 [error] [Extension Host] Failed to load MSAL binary: Error: Cannot find module './msal-node-runtime'
+Require stack:
+- /opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js
+- /opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js
+	at Module._resolveFilename (node:internal/modules/cjs/loader:1372:15)
+	at n._resolveFilename (node:electron/js2c/utility_init:2:16249)
+	at t._resolveFilename (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22931)
+	at defaultResolveImpl (node:internal/modules/cjs/loader:1028:19)
+	at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1033:22)
+	at Module._load (node:internal/modules/cjs/loader:1182:37)
+	at c._load (node:electron/js2c/node_init:2:17993)
+	at e._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:5984)
+	at t._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22649)
+	at r._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:25551)
+	at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+	at wrapModuleLoad (node:internal/modules/cjs/loader:242:24)
+	at Module.require (node:internal/modules/cjs/loader:1452:12)
+	at Module.require (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:81:36096)
+	at require (node:internal/modules/helpers:135:16)
+	at 7247 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:231600)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 9020 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:526968)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 6244 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:215773)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 3226 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:129004)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 2583 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:105051)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 8428 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:452019)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at 5256 (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:172891)
+	at n (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+	at /opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559691
+	at Object.<anonymous> (/opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559798)
+	at Module._compile (node:internal/modules/cjs/loader:1696:14)
+	at Module._extensions..js (node:internal/modules/cjs/loader:1829:10)
+	at Module.load (node:internal/modules/cjs/loader:1430:32)
+	at Module._load (node:internal/modules/cjs/loader:1253:12)
+	at c._load (node:electron/js2c/node_init:2:17993)
+	at e._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:5984)
+	at t._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22649)
+	at r._load (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:25551)
+	at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+	at wrapModuleLoad (node:internal/modules/cjs/loader:242:24)
+	at Module.require (node:internal/modules/cjs/loader:1452:12)
+	at Module.require (/home/avinas/.vscode/extensions/github.copilot-chat-0.31.5/dist/extension.js:81:36096)
+	at require (node:internal/modules/helpers:135:16)
+	at aJ.Cb (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:240:1253)
+2025-10-09 14:31:06.464 [info] Settings Sync: Account status changed from uninitialized to available
+2025-10-09 14:31:11.987 [error] Collection or definition not found for ms-python.vscode-pylance/pylanceMcp and ms-python.vscode-pylance/pylance mcp server: Error: Collection or definition not found for ms-python.vscode-pylance/pylanceMcp and ms-python.vscode-pylance/pylance mcp server
+    at lht.resolveConnection (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2160:2100)
+    at vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2160:11387
+    at vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:73168
+2025-10-09 14:31:12.505 [error] [UriError]: Scheme contains illegal characters.: Error: [UriError]: Scheme contains illegal characters.
+    at z6 (file:///opt/visual-studio-code/resources/app/out/main.js:30:64298)
+    at new od (file:///opt/visual-studio-code/resources/app/out/main.js:30:67678)
+    at new zr (file:///opt/visual-studio-code/resources/app/out/main.js:30:69116)
+    at od.revive (file:///opt/visual-studio-code/resources/app/out/main.js:30:68893)
+    at o5.call (file:///opt/visual-studio-code/resources/app/out/main.js:88:105741)
+    at Lf.s (file:///opt/visual-studio-code/resources/app/out/main.js:31:14859)
+    at Lf.q (file:///opt/visual-studio-code/resources/app/out/main.js:31:14382)
+    at Xo.value (file:///opt/visual-studio-code/resources/app/out/main.js:31:13784)
+    at P.C (file:///opt/visual-studio-code/resources/app/out/main.js:30:2373)
+    at P.D (file:///opt/visual-studio-code/resources/app/out/main.js:30:2443)
+    at P.fire (file:///opt/visual-studio-code/resources/app/out/main.js:30:2660)
+    at Xo.value (file:///opt/visual-studio-code/resources/app/out/main.js:28:4922)
+    at P.C (file:///opt/visual-studio-code/resources/app/out/main.js:30:2373)
+    at P.fire (file:///opt/visual-studio-code/resources/app/out/main.js:30:2591)
+    at Xo.value (file:///opt/visual-studio-code/resources/app/out/main.js:28:5110)
+    at P.C (file:///opt/visual-studio-code/resources/app/out/main.js:30:2373)
+    at P.fire (file:///opt/visual-studio-code/resources/app/out/main.js:30:2591)
+    at N (file:///opt/visual-studio-code/resources/app/out/main.js:28:7404)
+    at IpcMainImpl.i (file:///opt/visual-studio-code/resources/app/out/main.js:36:10776)
+    at IpcMainImpl.emit (node:events:518:28)
+    at Session.<anonymous> (node:electron/js2c/browser_init:2:106370)
+    at Session.emit (node:events:518:28)
+2025-10-09 14:31:14.047 [error] Error while getting the latest version for the extension daryoushalipourtirotir.php-xampp-runner from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.052 [error] Error while getting the latest version for the extension devsense.composer-php-vscode from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.057 [error] Error while getting the latest version for the extension devsense.intelli-php-vscode from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.060 [error] Error while getting the latest version for the extension devsense.phptools-vscode from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.074 [error] Error while getting the latest version for the extension devsense.profiler-php-vscode from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.105 [error] Error while getting the latest version for the extension ecmel.vscode-html-css from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.125 [error] Error while getting the latest version for the extension firefox-devtools.vscode-firefox-debug from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.141 [error] Error while getting the latest version for the extension formulahendry.code-runner from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.161 [error] Error while getting the latest version for the extension github.copilot from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.165 [error] Error while getting the latest version for the extension github.copilot-chat from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.168 [error] Error while getting the latest version for the extension imakeproject.theme-turbo from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.173 [error] Error while getting the latest version for the extension katsute.code-background from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.175 [error] Error while getting the latest version for the extension leizongmin.node-module-intellisense from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.192 [error] Error while getting the latest version for the extension ms-python.debugpy from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.197 [error] Error while getting the latest version for the extension ms-python.python from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.201 [error] Error while getting the latest version for the extension ms-python.vscode-pylance from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.203 [error] Error while getting the latest version for the extension ms-python.vscode-python-envs from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.207 [error] Error while getting the latest version for the extension ms-vscode.cmake-tools from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.210 [error] Error while getting the latest version for the extension ms-vscode.cpptools from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.212 [error] Error while getting the latest version for the extension ms-vscode.cpptools-extension-pack from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.215 [error] Error while getting the latest version for the extension ms-vscode.cpptools-themes from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.218 [error] Error while getting the latest version for the extension ms-vscode.live-server from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.221 [error] Error while getting the latest version for the extension oracle.oracle-java from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.225 [error] Error while getting the latest version for the extension redhat.java from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.227 [error] Error while getting the latest version for the extension ritwickdey.liveserver from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.229 [error] Error while getting the latest version for the extension vadimcn.vscode-lldb from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.231 [error] Error while getting the latest version for the extension visualstudioexptteam.intellicode-api-usage-examples from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.232 [error] Error while getting the latest version for the extension visualstudioexptteam.vscodeintellicode from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.233 [error] Error while getting the latest version for the extension vscjava.migrate-java-to-azure from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.234 [error] Error while getting the latest version for the extension vscjava.vscode-gradle from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.235 [error] Error while getting the latest version for the extension vscjava.vscode-java-debug from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.238 [error] Error while getting the latest version for the extension vscjava.vscode-java-dependency from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.239 [error] Error while getting the latest version for the extension vscjava.vscode-java-pack from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.240 [error] Error while getting the latest version for the extension vscjava.vscode-java-test from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.242 [error] Error while getting the latest version for the extension vscjava.vscode-java-upgrade from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.244 [error] Error while getting the latest version for the extension vscjava.vscode-maven from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:14.246 [error] Error while getting the latest version for the extension xabikos.javascriptsnippets from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2025-10-09 14:31:16.649 [error] [text file model] handleSaveError(2) - exit - resulted in a save error: Error: Unable to write file '/etc/xdg/waybar/config.jsonc' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/xdg/waybar/config.jsonc') file:///etc/xdg/waybar/config.jsonc
+2025-10-09 14:31:19.821 [warning] Failed to update in-progress status for chat session type 'claude-code': Can not find provider for claude-code
+2025-10-09 14:31:24.049 [error] Error while getting the latest version for the extension daryoushalipourtirotir.php-xampp-runner. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.050 [error] Error while getting the latest version for the extension devsense.composer-php-vscode. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.053 [error] Error while getting the latest version for the extension devsense.intelli-php-vscode. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.058 [error] Error while getting the latest version for the extension devsense.phptools-vscode. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.079 [error] Error while getting the latest version for the extension devsense.profiler-php-vscode. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.112 [error] Error while getting the latest version for the extension ecmel.vscode-html-css. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.130 [error] Error while getting the latest version for the extension firefox-devtools.vscode-firefox-debug. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.149 [error] Error while getting the latest version for the extension formulahendry.code-runner. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.200 [error] Error while getting the latest version for the extension github.copilot. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.201 [error] Error while getting the latest version for the extension github.copilot-chat. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.206 [error] Error while getting the latest version for the extension imakeproject.theme-turbo. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.209 [error] Error while getting the latest version for the extension katsute.code-background. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.218 [error] Error while getting the latest version for the extension leizongmin.node-module-intellisense. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.221 [error] Error while getting the latest version for the extension ms-python.debugpy. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.228 [error] Error while getting the latest version for the extension ms-python.python. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.232 [error] Error while getting the latest version for the extension ms-python.vscode-pylance. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.234 [error] Error while getting the latest version for the extension ms-python.vscode-python-envs. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.236 [error] Error while getting the latest version for the extension ms-vscode.cmake-tools. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.239 [error] Error while getting the latest version for the extension ms-vscode.cpptools. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.252 [error] Error while getting the latest version for the extension ms-vscode.cpptools-extension-pack. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.255 [error] Error while getting the latest version for the extension ms-vscode.cpptools-themes. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.268 [error] Error while getting the latest version for the extension ms-vscode.live-server. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.279 [error] Error while getting the latest version for the extension oracle.oracle-java. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.280 [error] Error while getting the latest version for the extension redhat.java. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.281 [error] Error while getting the latest version for the extension ritwickdey.liveserver. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.283 [error] Error while getting the latest version for the extension vadimcn.vscode-lldb. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.284 [error] Error while getting the latest version for the extension visualstudioexptteam.intellicode-api-usage-examples. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.285 [error] Error while getting the latest version for the extension visualstudioexptteam.vscodeintellicode. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.287 [error] Error while getting the latest version for the extension vscjava.migrate-java-to-azure. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.290 [error] Error while getting the latest version for the extension vscjava.vscode-gradle. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.298 [error] Error while getting the latest version for the extension vscjava.vscode-java-debug. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.298 [error] Error while getting the latest version for the extension vscjava.vscode-java-dependency. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.301 [error] Error while getting the latest version for the extension vscjava.vscode-java-pack. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.302 [error] Error while getting the latest version for the extension vscjava.vscode-java-test. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.302 [error] Error while getting the latest version for the extension vscjava.vscode-java-upgrade. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.305 [error] Error while getting the latest version for the extension vscjava.vscode-maven. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:24.306 [error] Error while getting the latest version for the extension xabikos.javascriptsnippets. Error: Fetch timeout: 10000ms
+2025-10-09 14:31:34.016 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-10-09 14:31:36.536 [info] [perf] Render performance baseline is 152ms
+2025-10-09 14:32:37.395 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-09 14:32:55.546 [error] [text file model] handleSaveError(54) - exit - resulted in a save error: Error: Unable to write file '/etc/xdg/waybar/config.jsonc' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/xdg/waybar/config.jsonc') file:///etc/xdg/waybar/config.jsonc
+2025-10-09 14:33:39.543 [error] [text file model] handleSaveError(75) - exit - resulted in a save error: Error: Unable to write file '/etc/xdg/waybar/config.jsonc' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/xdg/waybar/config.jsonc') file:///etc/xdg/waybar/config.jsonc
+2025-10-09 14:34:44.826 [info] Auto updating outdated extensions. vadimcn.vscode-lldb
+2025-10-09 14:34:59.641 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/avinas/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/avinas/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/avinas/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/avinas/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:485:21)
+2025-10-09 14:35:21.384 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-10-09 14:36:06.293 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-10-09 14:36:12.751 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-09 14:37:07.808 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-10-09 14:37:24.333 [error] [text file model] handleSaveError(76) - exit - resulted in a save error: Error: Unable to write file '/etc/xdg/waybar/config.jsonc' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/xdg/waybar/config.jsonc') file:///etc/xdg/waybar/config.jsonc

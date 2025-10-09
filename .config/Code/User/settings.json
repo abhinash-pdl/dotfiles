@@ -1,0 +1,56 @@
+{
+    "background.windowBackgrounds": [
+        "/home/avinas/backgrounds/**"
+    ],
+    "debug.onTaskErrors": "debugAnyway",
+    "background.backgroundOpacity": [
+        0.9,
+        0.1,
+        0.1,
+        0.1
+    ],
+    "vscode-edge-devtools.webhint": false,
+    "background.useInvertedOpacity": true,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.defaultProfile.linux": "bash",
+
+    // ===== LLDB configuration overrides =====
+    "lldb.executable": "/usr/bin/lldb-vscode",
+    "lldb.launch.env": {
+        "LD_LIBRARY_PATH": "/usr/lib"
+    },
+    "lldb.launch.terminal": "integrated",
+    "lldb.consoleMode": "commands",
+    "lldb.dereferencePointers": true,
+    "workbench.colorTheme": "Turbo Colors",
+    "background.enabled": true,
+    "background.autoInstall": true,
+    "php.executablePath": "/opt/lampp/bin/php",
+    "jdk.telemetry.enabled": true,
+    "jake.autoDetect": "on",
+    "redhat.telemetry.enabled": true,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
+    "github.copilot.chat.edits.suggestRelatedFilesForTests": false,
+    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": false,
+    "vsintellicode.modify.editor.suggestSelection": "disabled",
+    "github.copilot.enable": {
+        "*": false
+    },
+    "workbench.preferredLightColorTheme": "Turbo Colors",
+    "window.autoDetectColorScheme": true,
+    "terminal.integrated.localEchoStyle": "dim",
+    "workbench.preferredDarkColorTheme": "Turbo Colors",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.apk": "default"
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+
+ 
+}

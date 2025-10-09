@@ -1,0 +1,23 @@
+2025-10-08 23:43:11.571 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-10-08 23:43:11.571 [info] Using the Electron fetcher.
+2025-10-08 23:43:11.571 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-10-08 23:43:11.571 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-10-08 23:43:11.571 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-10-08 23:43:12.255 [info] Logged in as Abinash161
+2025-10-08 23:43:12.874 [info] FetcherService: electron-fetch succeeded
+2025-10-08 23:43:12.887 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary,text-embedding-3-small-512. Deprecated: 
+2025-10-08 23:43:12.897 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary,text-embedding-3-small-512. Deprecated: 
+2025-10-08 23:43:12.897 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2025-10-08 23:43:12.904 [info] FetcherService: electron-fetch succeeded
+2025-10-08 23:43:12.905 [info] Got Copilot token for Abinash161
+2025-10-08 23:43:12.921 [info] activationBlocker from 'languageModelAccess' took for 760ms
+2025-10-08 23:43:13.004 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-10-08 23:43:13.004 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-10-08 23:43:13.023 [info] Registering default platform agent...
+2025-10-08 23:43:13.024 [info] [code-referencing] Public code references are enabled.
+2025-10-08 23:43:13.024 [info] activationBlocker from 'conversationFeature' took for 869ms
+2025-10-08 23:43:13.730 [info] Fetched model metadata in 1537ms 8811394f-632a-4844-bfac-055ffe804921
+2025-10-08 23:43:13.747 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-10-08 23:43:13.750 [info] Latest entry: ccreq:latest.copilotmd
+2025-10-08 23:43:13.751 [info] ccreq:b946cd80.copilotmd | markdown
+2025-10-08 23:43:14.749 [info] Fetched auto model in 365ms.

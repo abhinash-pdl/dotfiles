@@ -1,0 +1,58 @@
+2025-10-09 13:49:53.464 [info] Extension host with pid 2673 started
+2025-10-09 13:49:53.798 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-10-09 13:49:54.652 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-10-09 13:49:55.104 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-10-09 13:49:55.404 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-10-09 13:49:56.126 [info] Eager extensions activated
+2025-10-09 13:49:56.293 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:49:56.300 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:49:56.378 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:49:56.385 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:49:56.496 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:50:01.277 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:50:02.947 [info] ExtensionService#_doActivateExtension Katsute.code-background, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:50:02.978 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:50:02.992 [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb, startup: false, activationEvent: 'onStartupFinished'
+2025-10-09 13:50:03.046 [info] Extension host terminating: renderer closed the MessagePort
+2025-10-09 13:50:03.096 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+    at fl (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1394)
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:117058
+    at Array.forEach (<anonymous>)
+    at j4.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116998)
+    at aJ.terminate (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10194)
+    at RP.terminate (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:914)
+    at bs (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:10410)
+    at MessagePortMain.<anonymous> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:6949)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) 
+2025-10-09 13:50:03.100 [error] ProxyResolver#addCertificatesV1 Canceled: Canceled
+    at new CR (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:115607)
+    at j4.U (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120217)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:117711)
+    at Fb.loadCertificates (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:109:74228)
+    at Object.loadAdditionalCertificates (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:22768)
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:778:53
+    at Generator.next (<anonymous>)
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:35:71
+    at new Promise (<anonymous>)
+    at __awaiter (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:31:12)
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:777:43
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:779:16
+    at Generator.next (<anonymous>)
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:35:71
+    at new Promise (<anonymous>)
+    at __awaiter (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:31:12)
+    at getOrLoadAdditionalCertificates (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:775:12)
+    at addCertificatesToOptionsV1 (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:754:9)
+    at resolveProxyWithRequest (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:114:9)
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:346:77
+    at new Promise (<anonymous>)
+    at PacProxyAgent.resolveP (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:346:54)
+    at PacProxyAgent.<anonymous> (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/agent.js:74:37)
+    at Generator.next (<anonymous>)
+    at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/agent.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/agent.js:4:12)
+    at PacProxyAgent.connect (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/agent.js:56:16)
+    at /opt/visual-studio-code/resources/app/node_modules/agent-base/dist/index.js:132:30
+2025-10-09 13:50:03.111 [info] Extension host with pid 2673 exiting with code 0
