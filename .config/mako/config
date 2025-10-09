@@ -1,0 +1,15 @@
+font=Inter 11
+background-color=#0f1117cc
+text-color=#e6eef6
+border-color=#00000000
+border-size=0
+border-radius=10
+
+# Positioning and geometry
+anchor=top-right
+margin=12
+
+# Behavior
+max-visible=4
+default-timeout=4000
+markup=1
