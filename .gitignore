@@ -1,0 +1,58 @@
+# =====================
+# VSCode caches & extensions
+# =====================
+.config/Code/Cache/
+.config/Code/CachedExtensionVSIXs/
+.config/Code/CachedProfilesData/
+.config/Code/Code\ Cache/
+.config/Code/Cookies*
+.config/Code/Crashpad/
+.config/Code/Local\ Storage/
+.config/Code/TransportSecurity/
+.config/Code/User/workspaceStorage/
+
+# =====================
+# Git stuff
+# =====================
+.gitmodules
+.git/config
+.gitignore
+
+# =====================
+# Temporary / session files
+# =====================
+.config/Code/Backups/
+.config/Code/blob_storage/
+.config/Code/Session\ Storage/
+.config/Code/SharedStorage/
+.config/Code/Trust\ Tokens*
+.config/Code/DawnWebGPUCache/
+.config/Code/DawnGraphiteCache/
+.config/Code/GPUCache/
+.config/Code/Network\ Persistent\ State/
+
+# =====================
+# Other caches / logs
+# =====================
+.config/obs-studio/backup/
+.config/obs-studio/logs/
+.config/pulse/*
+.config/Code/logs/
+.config/Code/Cookies-journal
+.config/Code/Trust\ Tokens-journal
+.config/Code/machineid
+
+# =====================
+# Any system temp files
+# =====================
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# =====================
+# Optional: other editor caches
+# =====================
+*.DS_Store
+*.directory
+.config/Code/CachedExtensionVSIXs/
