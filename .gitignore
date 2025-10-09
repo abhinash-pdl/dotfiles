@@ -57,3 +57,4 @@
 *.directory
 .config/Code/CachedExtensionVSIXs/
 .config/vesktop/sessionData/
+.config/vesktop/sessionData/
