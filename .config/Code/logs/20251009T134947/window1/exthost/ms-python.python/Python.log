@@ -1,8 +1,0 @@
-2025-10-09 13:50:00.336 [info] Native locator: Refresh started
-2025-10-09 13:50:00.336 [info] Native locator: Refresh started
-2025-10-09 13:50:00.486 [info] Native locator: Refresh finished in 1867 ms
-2025-10-09 13:50:00.493 [info] Python interpreter path: ./.venv/bin/python
-2025-10-09 13:50:00.576 [info] > pyenv which python
-2025-10-09 13:50:00.576 [info] cwd: ~/.config/hypr
-2025-10-09 13:50:10.773 [info] Starting Pylance language server.
-2025-10-09 13:50:54.302 [info] Python interpreter path: /usr/bin/python

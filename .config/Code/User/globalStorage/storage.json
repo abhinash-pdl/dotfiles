@@ -41,35 +41,39 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#0b012e",
+    "themeBackground": "#1f1f1f",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#cccccc",
-            "background": "#0b012e",
-            "editorBackground": "#0b012e",
-            "titleBarBackground": "#0000dd",
-            "activityBarBackground": "#000000",
-            "sideBarBackground": "#1f1f1f",
-            "statusBarBackground": "#000080",
-            "statusBarNoFolderBackground": "#68217a"
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
-            "auxiliaryBarWidth": 428,
+            "sideBarWidth": 298,
+            "auxiliaryBarWidth": 300,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 170,
-            "auxiliaryBarWidth": 428,
+            "sideBarWidth": 298,
+            "auxiliaryBarWidth": 300,
             "workspaces": {
                 "a55f8cd98236a3d97ed59bd407df3af1": {
                     "sideBarVisible": true,

@@ -1,0 +1,10 @@
+[Icon Theme]
+Name=CustomWhite
+Comment=Custom white icons for disconnected states
+Inherits=Adwaita
+Directories=24x24/status,symbolic/status
+
+[24x24/status]
+Size=24
+Context=Status
+Type=Fixed

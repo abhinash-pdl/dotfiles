@@ -1,7 +1,0 @@
-2025-10-09 14:31:36.368 [error] #1: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_TIMED_OUT
-2025-10-09 14:31:37.172 [error] #2: https://vscode-sync.trafficmanager.net/v1/manifest - error GET net::ERR_TIMED_OUT
-2025-10-09 14:32:13.384 [error] #3: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_TIMED_OUT
-2025-10-09 14:32:19.833 [error] #5: https://vscode-sync.trafficmanager.net/v1/manifest - error GET net::ERR_TIMED_OUT
-2025-10-09 14:32:20.147 [error] #4: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_TIMED_OUT
-2025-10-09 14:32:20.150 [error] #6: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_TIMED_OUT
-2025-10-09 14:36:10.733 [error] #33: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms

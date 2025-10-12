@@ -5,3 +5,5 @@ video/mp4=org.videolan.VLC.desktop
 [Added Associations]
 image/jpeg=org.gnome.Loupe.desktop;thunar-settings.desktop;
 video/mp4=org.videolan.VLC.desktop;
+text/plain=code.desktop;
+text/x-csrc=code.desktop;
