@@ -1,7 +1,7 @@
 *{
     border: none;
-    font-family: Font Awesome, Roboto, Arial, sans-serif;
-    font-size: 13px;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Symbols Nerd Font", monospace; 
+   font-size: 13px;
     color: #ffffff;
     border-radius: 20px;
 
@@ -79,7 +79,6 @@ padding: 0 10px;
 #network:hover,
 #pulseaudio:hover,
 #custom-media:hover,
-#tray:hover,
 #mode:hover,
 #custom-power:hover,
 #backlight:hover,
@@ -90,6 +89,9 @@ padding: 0 10px;
 	background-color:rgba(0, 0, 0, 0.5);
 }
 
+#network {
+    font-size: 16px;
+}
 
 #mode {
     color: #cc3436;
@@ -98,9 +100,9 @@ padding: 0 10px;
 #custom-power {
     background-color: rgba(0,119,179,0.6);
     border-radius: 100px;
-    margin: 2px 4px;
-    padding: 0 4px;
-    font-size: 14px;
+    margin: 1px 2px;
+    padding: 0 5px 0 4px;
+    font-size: 15px;
 }
 /*-----Indicators----*/
 #idle_inhibitor.activated {
