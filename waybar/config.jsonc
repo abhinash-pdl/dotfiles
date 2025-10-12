@@ -4,10 +4,16 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
+    "position": "top",
+    "margin": 0,
+    "layer": "top",
+    "exclusive": true,
+
     // Choose the order of the modules
     "modules-left": [
         "custom/arch",
-	"hyprland/workspaces",
+	    "hyprland/workspaces",
+        
         "sway/mode",
         "sway/scratchpad",
         "custom/media"
@@ -20,7 +26,7 @@
     "modules-right": [
         "mpd",
         "pulseaudio",
-	  "network",
+	    "tray",
         "power-profiles-daemon",
         "cpu",
         "memory",
@@ -29,15 +35,14 @@
         "sway/language",
         "battery",
         "battery#bat2",
-        "tray",
         "custom/power"
     ],
 
     "custom/arch": {
         "format": " 󰣇 ",
         "tooltip": true,
-        "tooltip-format": "Apps",
-	"on-click": "wofi --show drun"    
+        "tooltip-format": "Specs",
+        "on-click": "kitty sh -c 'fastfetch; exec fish'"
 },
 
     // Modules configuration
@@ -105,7 +110,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10,
+        "spacing": 16
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
@@ -161,33 +166,50 @@
         "power-saver": ""
       }
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click": "nm-connection-editor"    
+    
+"network": {
+	"format": "{ifname}",
+	"format-wifi": " ",
+	"format-ethernet": "󰌘",
+	"format-disconnected": "󰌙",
+	"tooltip-format": "{essid}  {signalStrength}%\n{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
+	"format-linked": " {ifname} (No IP)",
+	"tooltip-format-ethernet": "{ifname} 󰌘",
+	"tooltip-format-disconnected": "󰌙 Disconnected",
+	"max-length": 30,
+	"format-icons": [""],
+	"on-click-right": "kitty nmtui; exec fish",
+	"signal-strength": {
+		"bad": "#ff5555",      // red for weak
+		"medium": "#f1fa8c",   // yellow for mid
+		"good": "#50fa7b"      // green for strong
+	}
 },
-    "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+
+
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+        "on-click":"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right":"pavucontrol"
     },
 
     "custom/media": {
