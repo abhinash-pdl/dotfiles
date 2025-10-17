@@ -1,6 +1,0 @@
-blueman-applet 11.38.33 WARNING  PluginManager:153 __load_plugin: Not loading DhcpClient because its conflict has higher priority
-blueman-applet 11.38.33 WARNING  TransferService:212 _make_share_path: Failed to get Download dir from XDG
-blueman-applet 11.38.33 WARNING  PluginManager:153 __load_plugin: Not loading PPPSupport because its conflict has higher priority
-blueman-applet 11.38.48 WARNING  PluginManager:153 __load_plugin: Not loading DhcpClient because its conflict has higher priority
-blueman-applet 11.38.48 WARNING  TransferService:212 _make_share_path: Failed to get Download dir from XDG
-blueman-applet 11.38.48 WARNING  PluginManager:153 __load_plugin: Not loading PPPSupport because its conflict has higher priority

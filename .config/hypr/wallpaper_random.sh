@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-# wallpaper_random.sh
-# Cycles wallpapers randomly from the wallpapers directory using hyprctl hyprpaper
-# Designed to run in background (exec-once in hyprland.conf)
+# wallpaper_random.sh - set random wallpaper with pywal colors on startup
 
-WALLPAPER_DIR="/home/avinas/Pictures/wallpapers"
-INTERVAL=${1:-300} # seconds, default 300 (5 minutes)
+WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 
 shopt -s nullglob
 files=("$WALLPAPER_DIR"/*)
@@ -13,36 +10,24 @@ if [ ${#files[@]} -eq 0 ]; then
   exit 1
 fi
 
-random_wallpaper() {
-  # pick random file
-  local idx=$((RANDOM % ${#files[@]}))
-  echo "${files[$idx]}"
-}
+# pick a random wallpaper
+path="${files[RANDOM % ${#files[@]}]}"
 
-set_wallpaper() {
-  local path="$1"
-  # preload then set (hyprpaper requires preload)
-  # ensure hyprpaper running
-  if ! hyprctl hyprpaper listloaded >/dev/null 2>&1; then
-    hyprpaper &
-    # wait a short while for socket
-    for i in {1..20}; do
-      sleep 0.1
-      if hyprctl hyprpaper listloaded >/dev/null 2>&1; then
-        break
-      fi
-    done
-  fi
+# ensure hyprpaper is running
+if ! hyprctl hyprpaper listloaded >/dev/null 2>&1; then
+  hyprpaper &
+  for i in {1..20}; do
+    sleep 0.1
+    if hyprctl hyprpaper listloaded >/dev/null 2>&1; then break; fi
+  done
+fi
 
-  hyprctl hyprpaper preload "$path"
-  # set for all monitors
-  hyprctl hyprpaper wallpaper ",${path}"
-}
+# set wallpaper via hyprpaper
+hyprctl hyprpaper preload "$path"
+hyprctl hyprpaper wallpaper ",${path}"
 
-# Run once initially
-set_wallpaper "$(random_wallpaper)"
+# set pywal colors for terminal/apps
+wal -i "$path"
 
-while true; do
-  sleep "$INTERVAL"
-  set_wallpaper "$(random_wallpaper)"
-done
+# optional: print selected wallpaper
+echo "[wallpaper_random] selected: $path"

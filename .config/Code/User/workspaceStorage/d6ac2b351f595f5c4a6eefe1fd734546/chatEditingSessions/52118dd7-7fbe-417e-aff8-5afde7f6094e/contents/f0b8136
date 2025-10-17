@@ -1,9 +1,0 @@
-# Path to all wallpapers
-wallpapers = /home/avinas/Pictures/wallpapers/*
-
-# Cycle interval in seconds
-cycle_interval = 5
-
-# Wallpaper mode (fill, fit, center, stretch)
-mode = fill
-

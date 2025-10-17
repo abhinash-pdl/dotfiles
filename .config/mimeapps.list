@@ -1,9 +1,35 @@
 [Default Applications]
 x-scheme-handler/discord=vesktop.desktop
 video/mp4=org.videolan.VLC.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+inode/directory=Thunar.desktop
+application/x-directory=Thunar.desktop
+x-directory/normal=Thunar.desktop
+application/pdf=firefox.desktop
+text/plain=org.gnome.gedit.desktop
 
 [Added Associations]
 image/jpeg=org.gnome.Loupe.desktop;thunar-settings.desktop;
 video/mp4=org.videolan.VLC.desktop;
-text/plain=code.desktop;
+text/plain=code.desktop;org.gnome.gedit.desktop;
 text/x-csrc=code.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+text/html=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+application/pdf=firefox.desktop;

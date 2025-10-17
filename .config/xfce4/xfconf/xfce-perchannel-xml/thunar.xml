@@ -9,4 +9,9 @@
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
   <property name="last-details-view-column-widths" type="string" value="50,50,112,50,50,291,50,50,843,50,50,83,50,406"/>
   <property name="last-show-hidden" type="bool" value="true"/>
+  <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>
+  <property name="misc-change-window-icon" type="bool" value="true"/>
+  <property name="misc-parallel-copy-mode" type="string" value="THUNAR_PARALLEL_COPY_MODE_ONLY_LOCAL_IDLE_DEVICE"/>
+  <property name="last-window-width" type="int" value="1906"/>
+  <property name="last-window-height" type="int" value="1036"/>
 </channel>
