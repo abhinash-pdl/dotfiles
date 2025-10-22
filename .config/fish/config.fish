@@ -5,3 +5,13 @@ end
 
 # Import pywal colors
 cat ~/.cache/wal/sequences 2>/dev/null
+
+# Run fastfetch only when inside Kitty terminal
+if test "$TERM" = "xterm-kitty"
+    fastfetch
+end
+
+
+alias cava='cava -p $HOME/.cache/wal/cava_config'
+
+

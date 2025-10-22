@@ -11,11 +11,12 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
-inode/directory=Thunar.desktop
+inode/directory=thunar.desktop
 application/x-directory=Thunar.desktop
 x-directory/normal=Thunar.desktop
 application/pdf=firefox.desktop
 text/plain=org.gnome.gedit.desktop
+x-scheme-handler/ssh=thunar.desktop
 
 [Added Associations]
 image/jpeg=org.gnome.Loupe.desktop;thunar-settings.desktop;
@@ -33,3 +34,4 @@ application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 application/pdf=firefox.desktop;
+application/x-theme=org.gnome.gedit.desktop;kitty.desktop;

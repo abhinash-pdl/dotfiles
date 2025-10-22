@@ -1,0 +1,81 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "002a478e263219f904394bcc06e8db30de50e8995ca85dcf02bba5dbad691a02",
+    "telemetry.devDeviceId": "242735d2-9b85-47ad-881f-d3d8057f2b0a",
+    "backupWorkspaces": {
+        "workspaces": [
+            {
+                "id": "5fd565e97870708df1cb8321aef2790c",
+                "configURIPath": "file:///home/avinas/.config/Code/Workspaces/1761070089694/workspace.json"
+            }
+        ],
+        "folders": [],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/avinas/.config/Code/Workspaces/1761070089694/workspace.json": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "workspaceIdentifier": {
+                "id": "5fd565e97870708df1cb8321aef2790c",
+                "configURIPath": "file:///home/avinas/.config/Code/Workspaces/1761070089694/workspace.json"
+            },
+            "backupPath": "/home/avinas/.config/Code/Backups/5fd565e97870708df1cb8321aef2790c",
+            "uiState": {
+                "mode": 1,
+                "x": 7,
+                "y": 37,
+                "width": 1906,
+                "height": 1036
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 236,
+            "auxiliaryBarWidth": 236,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 236,
+            "auxiliaryBarWidth": 236,
+            "workspaces": {
+                "5fd565e97870708df1cb8321aef2790c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}
