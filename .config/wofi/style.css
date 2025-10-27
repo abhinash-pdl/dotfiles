@@ -1,24 +1,24 @@
 window {
-    background-color: #151109;
-    color: #c4c3c1;
+    background-color: #180a0a;
+    color: #c5c1c1;
 }
 
 listview {
-    background-color: #151109;
-    border: 1px solid #151109;
+    background-color: #180a0a;
+    border: 1px solid #180a0a;
 }
 
 listview row:selected {
-    background-color: #99773B;
-    color: #c4c3c1;
+    background-color: #778C96;
+    color: #c5c1c1;
 }
 
 scrollbar {
-    background-color: #151109;
+    background-color: #180a0a;
     border-radius: 5px;
 }
 
 scrollbar slider {
-    background-color: #99773B;
+    background-color: #778C96;
     border-radius: 5px;
 }
