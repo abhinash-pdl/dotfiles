@@ -3,6 +3,7 @@ if status is-interactive
 end
 # Import pywal colors\ncat ~/.cache/wal/sequences 2>/dev/null
 
+
 # Import pywal colors
 cat ~/.cache/wal/sequences 2>/dev/null
 
@@ -10,6 +11,7 @@ cat ~/.cache/wal/sequences 2>/dev/null
 if test "$TERM" = "xterm-kitty"
     fastfetch
 end
+
 
 
 alias cava='cava -p $HOME/.cache/wal/cava_config'

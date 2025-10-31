@@ -5,7 +5,7 @@ After=graphical-session.target
 ConditionEnvironment=WAYLAND_DISPLAY
 	
 [Service]
-ExecStart=/usr/local/libexec/hyprpolkitagent
+ExecStart=/usr/lib/hyprpolkitagent/hyprpolkitagent
 Slice=session.slice
 TimeoutStopSec=5sec
 Restart=on-failure
