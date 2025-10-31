@@ -13,28 +13,29 @@
     "modules-left": [
         "custom/arch",
 	    "hyprland/workspaces",
-        
         "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "sway/scratchpad"
 
     ],
+    
     "modules-center": [
         "sway/window",
 	"clock"
     ],
     "modules-right": [
+        "custom/media",
+        "custom/separator",
         "mpd",
         "pulseaudio",
 	    "tray",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
+        //"cpu",
+        //"memory",
         "backlight",
-        "keyboard-state",
-        "sway/language",
+        //"keyboard-state",
+        //"sway/language",
         "battery",
-        "battery#bat2",
+        //"battery#bat2",
         "custom/power"
     ],
 
@@ -42,7 +43,7 @@
         "format": " 󰣇 ",
         "tooltip": true,
         "tooltip-format": "Specs",
-        "on-click": "kitty sh -c 'fastfetch; exec fish'"
+        "on-click": "kitty --class kittyfloat"
 },
 
     // Modules configuration
@@ -110,7 +111,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 16
+        "spacing": 21
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
@@ -212,23 +213,31 @@
         "on-click-right":"pavucontrol"
     },
 
-    "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+"custom/media": {
+    "format": "{icon} {text}",
+    "return-type": "json",
+    "max-length": 40,
+    "format-icons": {
+        "spotify": "",
+        "default": "🎜"
     },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py",
+    "interval": 1,
+    "restart-interval": 10,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next"
+},
     "custom/power": {
         "format" : " ⏻ ",
 		"tooltip": false,
 		"on-click":"wlogout"
 	
+    },
+     // Separator module
+    "custom/separator": {
+        "format": "│",
+        "tooltip": false
     }
 }
 
