@@ -1,0 +1,71 @@
+#!/bin/bash
+# ~/.local/bin/whatsapp-control
+
+ACTION=${1:-toggle}  # Default to toggle if no parameter
+
+# Get current workspace ID
+CURRENT_WS=$(hyprctl activeworkspace -j | jq -r '.id')
+
+# Get active window class
+ACTIVE_CLASS=$(hyprctl activewindow -j | jq -r '.class' 2>/dev/null)
+
+case $ACTION in
+    "hide")
+        # Super+Q behavior: Hide WhatsApp, kill everything else
+        if [ "$ACTIVE_CLASS" = "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default" ]; then
+            # Active window is WhatsApp - move to special workspace
+            WINDOW_ADDRESS=$(hyprctl activewindow -j | jq -r '.address')
+            WINDOW_ADDRESS=${WINDOW_ADDRESS#0x}
+            echo "Hiding active WhatsApp window to special workspace"
+            hyprctl dispatch movetoworkspacesilent special:whatsapp,address:0x$WINDOW_ADDRESS
+        else
+            # Active window is anything else (including Spotify) - kill it
+            echo "Killing active window"
+            hyprctl dispatch killactive
+        fi
+        ;;
+    "minimize")
+        # Super+M behavior: Hide WhatsApp, minimize everything else
+        if [ "$ACTIVE_CLASS" = "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default" ]; then
+            # Active window is WhatsApp - move to special workspace
+            WINDOW_ADDRESS=$(hyprctl activewindow -j | jq -r '.address')
+            WINDOW_ADDRESS=${WINDOW_ADDRESS#0x}
+            echo "Hiding active WhatsApp window to special workspace"
+            hyprctl dispatch movetoworkspacesilent special:whatsapp,address:0x$WINDOW_ADDRESS
+        else
+            # Active window is anything else - minimize it
+            echo "Minimizing active window"
+            hyprctl dispatch minimize
+        fi
+        ;;
+    "toggle")
+        # Toggle behavior for WhatsApp only
+        WHATSAPP_INFO=$(hyprctl clients -j | jq -r '.[] | select(.initialClass == "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default") | "\(.address) \(.workspace.id)"' | head -1)
+
+        if [ -n "$WHATSAPP_INFO" ]; then
+            WINDOW_ADDRESS=$(echo "$WHATSAPP_INFO" | awk '{print $1}')
+            WINDOW_WS=$(echo "$WHATSAPP_INFO" | awk '{print $2}')
+            
+            WINDOW_ADDRESS=${WINDOW_ADDRESS#0x}
+            
+            if [ "$WINDOW_WS" = "$CURRENT_WS" ]; then
+                echo "Hiding WhatsApp to special workspace"
+                hyprctl dispatch movetoworkspacesilent special:whatsapp,address:0x$WINDOW_ADDRESS
+            elif [ "$WINDOW_WS" = "special:whatsapp" ]; then
+                echo "Showing WhatsApp from special workspace"
+                hyprctl dispatch togglespecialworkspace whatsapp
+                sleep 0.3
+                hyprctl dispatch focuswindow address:0x$WINDOW_ADDRESS
+            else
+                echo "Moving WhatsApp from workspace $WINDOW_WS to $CURRENT_WS"
+                hyprctl dispatch movetoworkspacesilent $CURRENT_WS,address:0x$WINDOW_ADDRESS
+                sleep 0.2
+                hyprctl dispatch focuswindow address:0x$WINDOW_ADDRESS
+            fi
+        else
+            # WhatsApp is not running - launch it on current workspace
+            echo "Launching new WhatsApp instance"
+            chromium --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
+        fi
+        ;;
+esac

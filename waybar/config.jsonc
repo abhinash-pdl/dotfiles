@@ -13,8 +13,9 @@
     "modules-left": [
         "custom/arch",
 	    "hyprland/workspaces",
-        "sway/mode",
-        "sway/scratchpad"
+        "custom/cava"
+        //"sway/mode",
+        //"sway/scratchpad"
 
     ],
     
@@ -238,6 +239,19 @@
     "custom/separator": {
         "format": "│",
         "tooltip": false
-    }
+        
+    },
+    "custom/cava": {
+        "exec": "~/.config/waybar/cava.sh",
+        "return-type": "json",
+        "restart-interval": 1,
+        "format": "{}",
+        "on-click": "kitty --class kittyfloat cava",
+        "tooltip": false
 }
+
+
+}
+
+
 

@@ -14,6 +14,6 @@ end
 
 
 
-alias cava='cava -p $HOME/.cache/wal/cava_config'
+alias cava='cava -p $HOME/.cache/wal/cava_colors'
 
 
