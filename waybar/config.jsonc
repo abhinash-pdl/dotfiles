@@ -30,7 +30,7 @@
         "pulseaudio",
 	    "tray",
         "power-profiles-daemon",
-        //"cpu",
+        "cpu",
         //"memory",
         "backlight",
         //"keyboard-state",
@@ -214,7 +214,7 @@
         "on-click-right":"pavucontrol"
     },
 
-"custom/media": {
+    "custom/media": {
     "format": "{icon} {text}",
     "return-type": "json",
     "max-length": 40,
@@ -226,9 +226,10 @@
     "exec": "$HOME/.config/waybar/mediaplayer.py",
     "interval": 1,
     "restart-interval": 10,
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl next"
+    "on-click": "~/.config/waybar/mediaplayer-toggle.sh play-pause",
+    "on-click-right": "~/.config/waybar/mediaplayer-toggle.sh next"
 },
+
     "custom/power": {
         "format" : " ⏻ ",
 		"tooltip": false,

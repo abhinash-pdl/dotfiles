@@ -1,56 +1,61 @@
-/* @import "$HOME/.config/colors/colors.css" */
-@import "../colors/colors.css";
+
 
 @keyframes glowing {
     0% {
-        box-shadow: 0 0 30px @pink;
+        box-shadow: 0 0 50px #f5c2e7;
     }
     20% {
-        box-shadow: 0 0 30px @pink;
+        box-shadow: 0 0 50px #f5c2e7;
     }
     80% {
-        box-shadow: 0 0 30px @foreground;
+        box-shadow: 0 0 50px #cdd6f4;
     }
     100% {
-        box-shadow: 0 0 30px @blue;
+        box-shadow: 0 0 50px #89b4fa;
     }
 }
 
 * {
     background-image: none;
-    font-family: "JetBrainsMono Nerd Font" , monospace;
+    font-family: "JetBrainsMono Nerd Font", monospace;
     transition: 20ms;
+    font-size: 13px;
+    color: white;
 }
 
 window {
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 0px;
+    background: rgba(0,0,0,0.5);
+    /* ensure text and focus rings can appear so keyboard navigation works */
+    font-size: 13px;
     background-size: 0;
-
 }
 
 button {
-    background: transparent;
+    background: rgba(0,0,0,0.5);
     outline-style: none;
     border: none;
     border-width: 0px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40%;
-    border-radius: 50px;
+    background-size:50%;
     box-shadow: none;
     text-shadow: none;
     animation: gradient_f 10s ease-in infinite;
 }
 
 button:hover {
-    background-size: 50%;
+    background-size: 55%;
     animation: glowing 1s infinite alternate;
     outline-style: none;
+    border-radius: 40px;
+    margin: -20px;
 }
+
 
 #lock {
     background-image: image(url("./icons/lock.png"));
+    border-top-left-radius: 40px ;
+    border-bottom-left-radius: 40px;
 }
 
 #suspend {
@@ -67,4 +72,7 @@ button:hover {
 
 #logout {
     background-image: image(url("./icons/logout.png"));
+        border-top-right-radius: 40px ;
+    border-bottom-right-radius: 40px;
 }
+

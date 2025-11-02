@@ -2,101 +2,95 @@
 import json
 import subprocess
 import sys
-import threading
-from collections import deque
-
-# Cache to store recent player activity
-player_cache = deque(maxlen=5)
-
-def get_player_status(player):
-    """Get status for a specific player without blocking"""
-    try:
-        result = subprocess.run(['playerctl', '-p', player, 'status'],
-                              capture_output=True, text=True, timeout=0.5)
-        if result.returncode == 0:
-            status = result.stdout.strip()
-            if status == "Playing":
-                player_cache.appendleft(player)
-            elif status == "Paused" and player not in player_cache:
-                player_cache.append(player)
-            return status
-    except (subprocess.TimeoutExpired, subprocess.SubprocessError):
-        pass
-    return None
 
 def get_media_info():
     try:
+        # Get all active players
         players_result = subprocess.run(['playerctl', '--list-all'], 
-                                      capture_output=True, text=True, timeout=0.5)
+                                      capture_output=True, text=True, timeout=1)
         
         if players_result.returncode != 0 or not players_result.stdout.strip():
             return {"text": "No media", "class": "stopped"}
         
-        current_players = players_result.stdout.strip().split('\n')
-        
-        # Background status checks
-        for player in current_players:
-            thread = threading.Thread(target=get_player_status, args=(player,))
-            thread.daemon = True
-            thread.start()
-        
-        # Prioritize players
-        prioritized_players = []
-        for cached_player in list(player_cache):
-            if cached_player in current_players:
-                prioritized_players.append(cached_player)
-        for player in current_players:
-            if player not in prioritized_players:
-                prioritized_players.append(player)
-        
-        # Check each player
-        for player in prioritized_players:
-            try:
-                metadata_result = subprocess.run([
-                    'playerctl', '-p', player, 'metadata',
-                    '--format', '{{artist}} - {{title}}'
-                ], capture_output=True, text=True, timeout=0.3)
-                
-                if metadata_result.returncode == 0 and metadata_result.stdout.strip():
-                    text = metadata_result.stdout.strip()
-                    text = text.replace("['", "").replace("']", "").replace("'", "")
-                    
-                    if len(text) > 35:
-                        text = text[:32] + "..."
-                    
-                    status_result = subprocess.run(['playerctl', '-p', player, 'status'],
-                                                 capture_output=True, text=True, timeout=0.2)
-                    
-                    status = "stopped"
-                    if status_result.returncode == 0:
-                        status = status_result.stdout.strip().lower()
-                    
-                    # Use simple ASCII/icons that work everywhere
-                    if status == "playing":
-                        icon = "▶"  # Simple play symbol
-                    elif status == "paused":
-                        icon = "⏸"  # Simple pause symbol  
-                    else:
-                        icon = "♫"  # Simple music note
-                    
-                    if status == "playing":
-                        if player in player_cache:
-                            player_cache.remove(player)
-                        player_cache.appendleft(player)
-                        return {
-                            "text": text,
-                            "icon": icon,
-                            "class": "playing"
-                        }
-                    elif status == "paused":
-                        return {
-                            "text": text,
-                            "icon": icon,
-                            "class": "paused"
-                        }
-            
-            except (subprocess.TimeoutExpired, subprocess.SubprocessError):
+        players = [p for p in players_result.stdout.strip().split('\n') if p.strip()]
+
+        # Build play_check_order to prefer the most recently listed player
+        # (playerctl's list order is used as a proxy for recency). This makes
+        # the last-played device win when deciding which player to show.
+        play_check_order = list(reversed(players))
+
+        def fetch_metadata(player):
+            m = subprocess.run([
+                'playerctl', '-p', player, 'metadata',
+                '--format', '{{artist}} - {{title}}'
+            ], capture_output=True, text=True, timeout=1)
+            if m.returncode == 0 and m.stdout.strip():
+                text = m.stdout.strip()
+                # Remove odd quoting artifacts if present
+                text = text.replace("['", "").replace("]'", "").replace("'", "")
+                if len(text) > 35:
+                    text = text[:32] + "..."
+                return text
+            return None
+
+        # 1) Prefer any player that is currently playing (check Spotify first)
+        for player in play_check_order:
+            status_result = subprocess.run(['playerctl', '-p', player, 'status'],
+                                           capture_output=True, text=True, timeout=1)
+            if status_result.returncode != 0:
                 continue
+            status = status_result.stdout.strip()
+            if status == 'Playing':
+                text = fetch_metadata(player)
+                if text:
+                    icon = "" if 'spotify' in player.lower() else "🎜"
+                    return {"text": text, "icon": icon, "class": "playing", "player": player, "status": "Playing"}
+
+        # 2) If nothing is playing, prefer the most recently listed paused player
+        # but prefer Spotify if it appears among paused players.
+        first_paused = None
+        spotify_paused = None
+        for player in reversed(players):
+            status_result = subprocess.run(['playerctl', '-p', player, 'status'],
+                                           capture_output=True, text=True, timeout=1)
+            if status_result.returncode != 0:
+                continue
+            status = status_result.stdout.strip()
+            if status == 'Paused':
+                text = fetch_metadata(player)
+                if not text:
+                    continue
+                entry = {"text": text, "icon": ("" if 'spotify' in player.lower() else "🎜"), "class": "paused", "player": player, "status": "Paused"}
+                if 'spotify' in player.lower():
+                    spotify_paused = entry
+                    break
+                if first_paused is None:
+                    first_paused = entry
+
+        if spotify_paused:
+            return spotify_paused
+        if first_paused:
+            return first_paused
+
+        # 3) Final fallback: prefer Spotify metadata if available, otherwise
+        # return the most recently listed player that has metadata.
+        spotify_entry = None
+        first_entry = None
+        for player in reversed(players):
+            text = fetch_metadata(player)
+            if not text:
+                continue
+            entry = {"text": text, "icon": ("" if 'spotify' in player.lower() else "🎜"), "class": "stopped", "player": player, "status": "Stopped"}
+            if 'spotify' in player.lower():
+                spotify_entry = entry
+                break
+            if first_entry is None:
+                first_entry = entry
+
+        if spotify_entry:
+            return spotify_entry
+        if first_entry:
+            return first_entry
         
         return {"text": "No media", "class": "stopped"}
         
