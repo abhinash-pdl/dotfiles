@@ -4,6 +4,14 @@
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 INTERVAL=${1:-600} # seconds, default 600 (10 minutes)
+LOCKFILE="/tmp/wallpaper_random.lock"
+
+# Prevent multiple instances
+exec 200>"$LOCKFILE"
+if ! flock -n 200; then
+  echo "[wallpaper_random] Another instance is already running"
+  exit 1
+fi
 
 shopt -s nullglob
 files=("$WALLPAPER_DIR"/*)
@@ -11,6 +19,9 @@ if [ ${#files[@]} -eq 0 ]; then
   echo "[wallpaper_random] no wallpapers found in $WALLPAPER_DIR" >&2
   exit 1
 fi
+
+# Cleanup on exit
+trap "rm -f '$LOCKFILE'" EXIT
 
 random_wallpaper() {
   local idx=$((RANDOM % ${#files[@]}))
