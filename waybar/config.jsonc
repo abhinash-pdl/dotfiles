@@ -48,13 +48,24 @@
 },
 
     // Modules configuration
-  "hyprland/workspaces": {
+"hyprland/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
       "active": "",
       "default": ""
-    }
-  },
+    },
+    "all-outputs": true,
+    "active-only": false,
+    "persistent-workspaces": {
+      "*": 5
+    },
+    "disable-scroll": true,
+    "on-scroll-up": ":",
+    "on-scroll-down": ":",
+    "show-special": false,
+    "ignore-workspaces": []
+},
+
 
 
 
@@ -112,7 +123,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 21
+        "spacing": 22
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
@@ -233,7 +244,7 @@
     "custom/power": {
         "format" : " ⏻ ",
 		"tooltip": false,
-		"on-click":"wlogout"
+		"on-click":"~/.config/wlogout/launch.sh"
 	
     },
      // Separator module

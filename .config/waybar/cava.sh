@@ -29,6 +29,13 @@ ascii_max_range = 7
 noise_reduction = 50
 EOF
 
+# Trap to ensure cleanup on exit
+cleanup() {
+    pkill -P $$ 2>/dev/null
+    exit 0
+}
+trap cleanup SIGTERM SIGINT EXIT
+
 pkill -f "cava -p $config_file"
 
 cava -p "$config_file" | while IFS= read -r line; do

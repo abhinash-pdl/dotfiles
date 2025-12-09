@@ -37,3 +37,4 @@ application/pdf=firefox.desktop;
 application/x-theme=org.gnome.gedit.desktop;kitty.desktop;
 application/x-code-workspace=org.gnome.gedit.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;
+image/png=org.gnome.Loupe.desktop;firefox.desktop;

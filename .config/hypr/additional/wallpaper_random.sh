@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# wallpaper_random.sh - set random wallpaper with pywal colors on startup
+# wallpaper_random.sh - auto-cycles random wallpapers with pywal colors
+# Designed to run in background (exec-once in hyprland.conf)
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
+INTERVAL=${1:-600} # seconds, default 600 (10 minutes)
 
 shopt -s nullglob
 files=("$WALLPAPER_DIR"/*)
@@ -10,24 +12,39 @@ if [ ${#files[@]} -eq 0 ]; then
   exit 1
 fi
 
-# pick a random wallpaper
-path="${files[RANDOM % ${#files[@]}]}"
+random_wallpaper() {
+  local idx=$((RANDOM % ${#files[@]}))
+  echo "${files[$idx]}"
+}
 
-# ensure hyprpaper is running
-if ! hyprctl hyprpaper listloaded >/dev/null 2>&1; then
-  hyprpaper &
-  for i in {1..20}; do
-    sleep 0.1
-    if hyprctl hyprpaper listloaded >/dev/null 2>&1; then break; fi
-  done
-fi
+set_wallpaper() {
+  local path="$1"
+  
+  # ensure swww daemon is running
+  if ! pgrep -x swww-daemon >/dev/null; then
+    swww-daemon &
+    sleep 0.5
+  fi
+  
+  # set wallpaper with swww (doesn't use Hyprland IPC, no Waybar interference)
+  swww img "$path" \
+    --transition-type wipe \
+    --transition-duration 1.5 \
+    --transition-fps 60 \
+    --transition-angle 30 &
+  
+  # set pywal colors for terminal/apps (waybar colors-waybar.css is read-only to prevent reloads)
+  # -n = skip setting wallpaper, -e = skip reloading external programs
+  (wal -i "$path" -n -e >/dev/null 2>&1 &)
+  
+  echo "[wallpaper_random] selected: $path"
+}
 
-# set wallpaper via hyprpaper
-hyprctl hyprpaper preload "$path"
-hyprctl hyprpaper wallpaper ",${path}"
+# Run once initially
+set_wallpaper "$(random_wallpaper)"
 
-# set pywal colors for terminal/apps
-wal -i "$path"
-
-# optional: print selected wallpaper
-echo "[wallpaper_random] selected: $path"
+# Loop forever, changing wallpaper every INTERVAL seconds
+while true; do
+  sleep "$INTERVAL"
+  set_wallpaper "$(random_wallpaper)"
+done
