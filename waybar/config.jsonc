@@ -52,18 +52,11 @@
     "format": "{name}: {icon}",
     "format-icons": {
       "active": "",
-      "default": ""
-    },
+      "default": ""   },
     "all-outputs": true,
     "active-only": false,
-    "persistent-workspaces": {
-      "*": 5
-    },
-    "disable-scroll": true,
-    "on-scroll-up": ":",
-    "on-scroll-down": ":",
-    "show-special": false,
-    "ignore-workspaces": []
+    "persistent": true,
+    "disable-scroll": true
 },
 
 
