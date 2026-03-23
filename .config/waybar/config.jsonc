@@ -14,6 +14,7 @@
         "custom/arch",
 	    "hyprland/workspaces",
         "custom/cava"
+        // "custom/updates"
         //"sway/mode",
         //"sway/scratchpad"
 
@@ -37,6 +38,7 @@
         //"sway/language",
         "battery",
         //"battery#bat2",
+        "custom/notifications",
         "custom/power"
     ],
 
@@ -44,7 +46,7 @@
         "format": " 󰣇 ",
         "tooltip": true,
         "tooltip-format": "Specs",
-        "on-click": "kitty --class kittyfloat"
+        "on-click": "foot --app-id footfloat"
 },
 
     // Modules configuration
@@ -184,7 +186,7 @@
 	"tooltip-format-disconnected": "󰌙 Disconnected",
 	"max-length": 30,
 	"format-icons": [""],
-	"on-click-right": "kitty nmtui; exec fish",
+    "on-click-right": "foot --app-id footfloat fish -ic 'nmtui; exec fish'",
 	"signal-strength": {
 		"bad": "#ff5555",      // red for weak
 		"medium": "#f1fa8c",   // yellow for mid
@@ -228,7 +230,7 @@
     },
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py",
-    "interval": 1,
+    "interval": 3,
     "restart-interval": 10,
     "on-click": "~/.config/waybar/mediaplayer-toggle.sh play-pause",
     "on-click-right": "~/.config/waybar/mediaplayer-toggle.sh next"
@@ -251,11 +253,30 @@
         "return-type": "json",
         "restart-interval": 1,
         "format": "{}",
-        "on-click": "kitty --class kittyfloat cava",
+        "on-click": "foot --app-id footfloat cava",
         "tooltip": false
+    },
+    "custom/notifications": {
+        "format": "{text}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/get-notifications.sh",
+        "exec-on-event": false,
+        "interval": 3,
+        "on-click": "swaync-client -op",
+        "on-click-right": "swaync-client -D",
+        "tooltip": true,
+        "tooltip-format": "Click to open\nRight-click to toggle DND"
+    },
+    "custom/updates": {
+  "format": "{} {icon}",
+  "return-type": "json",
+  "format-icons": {
+    "has-updates": "󱍷",
+    "updated": "󰂪"
+  },
+  "exec-if": "which waybar-module-pacman-updates",
+  "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 }
-
-
 }
 
 

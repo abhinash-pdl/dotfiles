@@ -7,13 +7,21 @@ end
 # Import pywal colors
 cat ~/.cache/wal/sequences 2>/dev/null
 
-# Run fastfetch only when inside Kitty terminal
-if test "$TERM" = "xterm-kitty"
+# Run fastfetch when inside Foot terminal
+if test "$TERM" = "xterm-kitty" -o "$TERM" = "foot"
     fastfetch
 end
 
 
 
-alias cava='cava -p $HOME/.cache/wal/cava_colors'
+# Wrap wal command to fix foot.ini color section
+function wal
+    command wal $argv
+    $HOME/.config/wal/fix-foot-colors.sh
+end
 
 
+fish_add_path /home/avinas/.spicetify
+
+# Created by `pipx` on 2026-03-22 17:42:49
+set PATH $PATH /home/avinas/.local/bin
