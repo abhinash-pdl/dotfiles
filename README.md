@@ -24,6 +24,7 @@ hyprctl reload
 - `fuzzel`
 - `cava`
 - `foot`
+- `fish `
 - `thunar`
 - `firefox`
 - `nwg-look`
@@ -54,4 +55,5 @@ hyprctl reload
 - `pipewire-alsa`
 - `pipewire-pulse`
 - `blueman`
+  
 
