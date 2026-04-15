@@ -9,7 +9,12 @@ cd .local  &&
 cp -r bin ~/.local/bin &&
 hyprctl reload
 ```
-
+#### If you want to use cava config
+```sh
+#From Hyprland directory
+cd cava-setup &&
+./install.sh 
+```
 ---
 
 #### Required Packages:
