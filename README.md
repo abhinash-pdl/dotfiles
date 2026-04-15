@@ -56,4 +56,23 @@ hyprctl reload
 - `pipewire-pulse`
 - `blueman`
   
+  ---
+### Overall looks
+
+- Waybar
+<img width="1919" height="40" alt="20260415_135527" src="https://github.com/user-attachments/assets/18cf2558-283d-431c-be63-70440a632aee" />
+
+- Cava
+  
+  <img width="1920" height="1080" alt="20260415_134713" src="https://github.com/user-attachments/assets/710037f9-9ee1-493d-8106-79b0433052b2" />
+
+- Terminal
+
+  <img width="1920" height="1080" alt="20260415_134727" src="https://github.com/user-attachments/assets/09483ec5-f45e-4fd1-8b74-9576b535af59" />
+
+- Wlogout
+
+  <img width="1920" height="1080" alt="20260415_135601" src="https://github.com/user-attachments/assets/2ad5a702-4d31-47ca-aa0d-4afb65ffbb25" />
+  
+
 
