@@ -1,6 +1,10 @@
 ### To use this Hyprland Rice
 
 ```sh
+#First backup your .config file
+mv ~/.config ~/.config.bak
+```
+```sh
 git clone https://github.com/Abinash161/Hyprland.git &&
 cd Hyprland	&&
 rm -rf ~/.config &&
