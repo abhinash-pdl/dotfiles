@@ -114,3 +114,12 @@ hl.window_rule({
     float  = true,
     center = true,
 })
+-- CopyQ clipboard manager
+hl.window_rule({
+    name   = "copyq-float",
+    match  = { class = "^(com.github.hluk.copyq)$" },
+
+    float  = true,
+    size   = "550 500",
+    center = true,
+})

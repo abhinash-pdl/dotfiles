@@ -1,14 +1,9 @@
 ### To use this Hyprland Rice
 
 ```sh
-#First backup your .config file
-cp -r ~/.config ~/.config.bak
-```
-```sh
 git clone https://github.com/Abinash161/Hyprland.git &&
 cd Hyprland	&&
-rm -rf ~/.config &&
-cp -r .config ~/.config	&&
+cp -r .config/* ~/.config/
 hyprctl reload
 ```
 #### If you want to use cava config

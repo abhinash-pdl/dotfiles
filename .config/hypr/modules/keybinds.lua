@@ -98,11 +98,10 @@ hl.bind("Print", hl.dsp.exec_cmd("~/.config/hypr/additional/screenshot_select.sh
 -- mainMod + Print: full screenshot (save + copy)
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("~/.config/hypr/additional/screenshot_full.sh"))
 
--- Clipboard history using cliphist
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | fuzzel --dmenu --match-mode fzf | cliphist decode | wl-copy"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("sh -c 'copyq toggle'"))
 
 -- Emoji picker
-hl.bind(mainMod .. " + Period", hl.dsp.exec_cmd("~/.config/hypr/additional/fuzzel-emoji.sh copy"))
+hl.bind(mainMod .. " + Period", hl.dsp.exec_cmd("rofimoji --action copy"))
 
 -- gta
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(

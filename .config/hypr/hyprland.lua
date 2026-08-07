@@ -12,13 +12,12 @@
 --  You can split this configuration into multiple files
 -- Create your files separately and then link them to this file like this:
 
-require("monitors")
-require("env")
-require("general")
-require("exec")
-require("battery")
-require("whatsapp")
-require("keybinds")
-require("rules")
+require("modules.monitors")
+require("modules.env")
+require("modules.general")
+require("modules.exec")
+require("modules.custom.battery")
+require("modules.custom.whatsapp")
+require("modules.keybinds")
+require("modules.rules")
  
-
