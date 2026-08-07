@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+STATE_FILE="/tmp/.battery_alert_level"
+
+while true; do
+    BAT=$(cat /sys/class/power_supply/BAT*/capacity)
+    STATUS=$(cat /sys/class/power_supply/BAT*/status)
+
+    # Reset notifications when charging
+    if [ "$STATUS" = "Charging" ]; then
+        rm -f "$STATE_FILE"
+        sleep 60
+        continue
+    fi
+
+    LAST=""
+    [ -f "$STATE_FILE" ] && LAST=$(cat "$STATE_FILE")
+
+    notify() {
+        notify-send -u critical "🔋 Low Battery" "$1"
+        canberra-gtk-play -i dialog-warning >/dev/null 2>&1
+        echo "$2" > "$STATE_FILE"
+    }
+
+    if [ "$BAT" -le 5 ] && [ "$LAST" != "5" ]; then
+        notify "Battery is at ${BAT}%. Plug in your charger immediately!" 5
+
+    elif [ "$BAT" -le 10 ] && [ "$LAST" != "10" ] && [ "$LAST" != "5" ]; then
+        notify "Battery is at ${BAT}%." 10
+
+    elif [ "$BAT" -le 20 ] && [ "$LAST" != "20" ] && [ "$LAST" != "10" ] && [ "$LAST" != "5" ]; then
+        notify "Battery is at ${BAT}%." 20
+    fi
+
+    sleep 30
+done

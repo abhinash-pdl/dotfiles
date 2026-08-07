@@ -31,14 +31,14 @@ random_wallpaper() {
 set_wallpaper() {
   local path="$1"
   
-  # ensure swww daemon is running
-  if ! pgrep -x swww-daemon >/dev/null; then
-    swww-daemon &
+  # ensure awww daemon is running
+  if ! pgrep -x awww-daemon >/dev/null; then
+    awww-daemon &
     sleep 0.5
   fi
   
-  # set wallpaper with swww (doesn't use Hyprland IPC, no Waybar interference)
-  swww img "$path" \
+  # set wallpaper with awww (doesn't use Hyprland IPC, no Waybar interference)
+  awww img "$path" \
     --transition-type wipe \
     --transition-duration 1.5 \
     --transition-fps 60 \

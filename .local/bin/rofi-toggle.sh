@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # Check if wofi is running
-if pgrep -x "wofi" > /dev/null; then
+if pgrep -x "rofi" > /dev/null; then
     # If running, kill it
-    pkill -x "wofi"
+    pkill -x "rofi"
 else
     # If not running, start wofi in drun mode
-    wofi --show drun &
+    rofi -show drun &
 fi
 
