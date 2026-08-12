@@ -57,6 +57,8 @@ cd cava-setup &&
 - `pipewire-alsa`
 - `pipewire-pulse`
 - `blueman`
+- `swayosd`
+- `copyq`
   
   ---
 ### Overall looks
