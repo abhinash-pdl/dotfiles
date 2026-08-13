@@ -1,0 +1,86 @@
+/*
+ * ░█▀▄░█▀█░█▀▀░▀█▀░░░▀█▀░█░█░█▀▀░█▄█░█▀▀
+ * ░█▀▄░█░█░█▀▀░░█░░░░░█░░█▀█░█▀▀░█░█░█▀▀
+ * ░▀░▀░▀▀▀░▀░░░▀▀▀░░░░▀░░▀░▀░▀▀▀░▀░▀░▀▀▀
+ */
+
+configuration {
+    ssh-command: "foot -e \"{ssh-client} {host} [-p {port}]\"";
+}
+
+@theme "arthur"
+
+* {
+    drac-bgd: #282a36;
+    drac-bgd-t: #282a36cc;
+    drac-cur: #44475a;
+    drac-fgd: #f8f8f2;
+    drac-cmt: #6272a4;
+    drac-cya: #8be9fd;
+    drac-grn: #50fa7b;
+    drac-ora: #ffb86c;
+    drac-pnk: #ff79c6;
+    drac-pur: #bd93f9;
+    drac-red: #ff5555;
+    drac-yel: #f1fa8c;
+
+    font: "Roboto 18";
+    foreground: @drac-fgd;
+}
+window {
+    width: 800px;
+}
+inputbar {
+    color: @drac-cya;
+    background-color: @drac-bgd-t;
+    children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @drac-grn;
+}
+prompt,case-indicator {
+    text-color: @drac-grn;
+}
+listview {
+    background-color: @drac-bgd-t;
+}
+entry, prompt {
+    font: "Roboto 20";
+}
+element {
+    orientation: horizontal;
+    children: [ element-icon, element-text ];
+    spacing: 5px;
+}
+element {
+    orientation: horizontal;
+    children: [ element-icon, element-text ];
+    spacing: 5px;
+}
+element selected.normal {
+    background-color: @drac-pnk;
+}
+element normal active {
+    foreground: @drac-yel;
+}
+element normal urgent {
+    foreground: @drac-red;
+}
+element alternate active {
+    foreground: @drac-ora;
+    foreground: @drac-bgd;
+}
+element alternate urgent {
+    foreground: @drac-red;
+}
+element selected active {
+    background-color: @drac-ora;
+    foreground: @drac-bgd;
+}
+element selected urgent {
+    background-color: @drac-red;
+    foreground: @drac-bgd;
+}
