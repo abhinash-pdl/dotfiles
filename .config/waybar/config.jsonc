@@ -125,12 +125,12 @@
         // }
     },
      "clock": {
-        "timezone": "Asia/Kathmandu",
-	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-   	 "format": "{:%H:%M:%S  -  %A, %d}",
-   	"format-alt": "{:%Y-%m-%d}" ,
-	"interval": 1
-    	},
+    "timezone": "Asia/Kathmandu",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%I:%M:%S %p  -  %A}",
+    "format-alt": "{:%Y-%m-%d}",
+    "interval": 1
+},
 
 
     "cpu": {

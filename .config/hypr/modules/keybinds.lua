@@ -11,8 +11,16 @@ local browser     = "firefox"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 -- hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+
+-- Exit: uwsm-aware. `uwsm check is-active` is uwsm's own scripting-oriented
+-- check (exit 0 if the current session is uwsm-managed). If so, use `uwsm stop`
+-- for a graceful, ordered shutdown (recommended by the wiki for uwsm users).
+-- Otherwise fall back to hyprshutdown, and as a last resort the exit dispatcher.
 hl.bind("CTRL+ALT + Delete", hl.dsp.exec_cmd(
-    "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
+    "if uwsm check is-active >/dev/null 2>&1; then uwsm stop; " ..
+    "elif command -v hyprshutdown >/dev/null 2>&1; then hyprshutdown; " ..
+    "else hyprctl dispatch 'hl.dsp.exit()'; fi"))
+
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + P", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
