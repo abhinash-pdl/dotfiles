@@ -96,6 +96,8 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("swayosd-client --brightness lo
 
 hl.bind("XF86PowerOff", hl.dsp.exec_cmd("~/.config/wlogout/launch.sh"), { locked = true, repeating = true })
 
+
+
 -- Requires playerctl
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
@@ -112,10 +114,14 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("sh -c 'copyq toggle'"))
 -- Emoji picker
 hl.bind(mainMod .. " + Period", hl.dsp.exec_cmd("rofimoji --action copy"))
 
--- gta
-hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(
-    [[fish -c "cd '~/.wine/drive_c/Program Files (x86)/Grand Theft Auto San Andreas' && wine gta-sa.exe"]]))
 
 -- notification control
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. "+SHIFT + N", hl.dsp.exec_cmd("swaync-client -C"))
+
+-- Press F7 to toggle Touchpad ON/OFF
+hl.bind("f7", hl.dsp.exec_cmd("~/.config/hypr/additional/toggle_touchpad.sh"), { locked = true, repeating = true })
+
+--press f7 to toggle touchscreen ON/OFF
+hl.bind("SUPER + F7", hl.dsp.exec_cmd("~/.config/hypr/additional/toggle_touchscreen.sh"), { locked = true, repeating = true })
+
