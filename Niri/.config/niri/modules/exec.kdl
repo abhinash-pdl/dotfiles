@@ -1,0 +1,41 @@
+// ----------------------------------------------------------------------------
+// AUTOSTART & ENVIRONMENT SETUP
+// ----------------------------------------------------------------------------
+
+//spawn-at-startup "xwayland-satellite" ":0"  //Run it with systemctl --user enable --now xwayland-satellite.service
+
+//  Session Finalization
+spawn-at-startup "uwsm" "finalize"
+
+
+// 3. System Services & UI
+spawn-at-startup "swaylock"
+spawn-at-startup "~/.config/hypr/additional/wallpaper_random.sh"
+spawn-at-startup "waybar"
+spawn-at-startup "swaync"
+spawn-at-startup "swayosd-server"
+spawn-at-startup "kanshi"
+spawn-at-startup "nm-applet" "--indicator"
+
+spawn-at-startup "sway-audio-idle-inhibit"
+spawn-at-startup "swayidle" "-w" \
+    "timeout" "300" "niri msg action power-off-monitors" \
+    "resume" "niri msg action power-on-monitors" \
+    "timeout" "600" "swaylock -f" \
+    "before-sleep" "swaylock -f" \
+    "lock" "swaylock -f"
+
+
+// 5. Clipboard & Background Tools
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+spawn-at-startup "systemctl" "--user" "--no-block" "start" "gammastep"
+//spawn-at-startup "systemctl" "--user" "--no-block" "start" "poweralertd.service"
+
+// 6. Polkit Authentication (Use standard GTK polkit instead of Hyprland IPC polkit)
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
+// 7. Delayed Startup
+spawn-at-startup "sh" "-c" "sleep 3 && kdeconnect-indicator"
+
+

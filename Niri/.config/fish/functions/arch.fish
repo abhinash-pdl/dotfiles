@@ -1,7 +1,7 @@
 function arch --description 'Arch Linux helper commands'
     switch "$argv[1]"
         case update
-            sudo pacman -Syyu --overwrite "*"
+            sudo pacman -Syu
 
         case install
             if test (count $argv) -lt 2
@@ -21,9 +21,9 @@ function arch --description 'Arch Linux helper commands'
 
             if test $use_paru -eq 1
                 echo "Falling back to paru..."
-                paru -S --overwrite "*" $packages
+                paru -S $packages
             else
-                sudo pacman -S --overwrite "*" $packages
+                sudo pacman -S  $packages
             end
 
         case remove

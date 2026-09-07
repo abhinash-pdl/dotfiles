@@ -1,0 +1,26 @@
+
+    {
+        "label": "lock",
+        "action": "swaylock",
+        "text": "Lock"
+    },
+    {
+        "label": "suspend",
+        "action": "systemctl suspend",
+        "text": "Suspend"
+    },
+    {
+        "label": "shutdown",
+        "action": "systemctl poweroff",
+        "text": "Shutdown"
+    },
+    {
+        "label": "reboot",
+        "action": "systemctl reboot",
+        "text": "Reboot"
+    },
+    {
+        "label": "logout",
+        "action": "uwsm stop niri.desktop",
+        "text": "Logout"
+    }

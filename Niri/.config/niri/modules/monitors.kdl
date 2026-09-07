@@ -1,0 +1,13 @@
+// ----------------------------------------------------------------------------
+// MONITORS
+// (was: modules/monitors.lua)
+// Hyprland: monitor = eDP-1, highres, auto, 1
+// ----------------------------------------------------------------------------
+output "eDP-1" {
+    mode "1920x1080@60.024"
+    scale 1.0
+    variable-refresh-rate
+}
+debug {
+    disable-direct-scanout
+}

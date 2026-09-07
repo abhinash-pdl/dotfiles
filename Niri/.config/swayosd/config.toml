@@ -1,0 +1,7 @@
+[server]
+style = "/home/avinas/.config/swayosd/style.css"
+top_margin = 0.85
+show_percentage = true
+playerctl_format = "{artist} - {title}"
+
+[client]

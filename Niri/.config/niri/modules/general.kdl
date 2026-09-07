@@ -1,0 +1,161 @@
+// ----------------------------------------------------------------------------
+// OVERVIEW & LAYOUT (Tuned for iGPU Performance)
+// ----------------------------------------------------------------------------
+
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 16
+    hide-when-typing
+    hide-after-inactive-ms 3000
+}
+
+overview {
+    // Added missing '#' to hex color to fix KDL parse error
+    backdrop-color "#1E1E2E"
+    workspace-shadow {
+//off
+    }
+}
+
+input {
+    disable-power-key-handling
+    keyboard {
+        xkb {
+            // layout "us"
+        }
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+        dwt 
+        accel-speed 0.8 // Reduced slightly to prevent twitchy overshooting
+        accel-profile "adaptive"
+        scroll-factor 2.5
+    }
+    touch {
+        off
+	}
+
+    mouse {
+        accel-speed 0.8
+        accel-profile "flat"
+    }
+
+    // FIX FOR STUCK HORIZONTAL SCROLL:
+    // Prevents cursor position from grabbing and locking window focus during horizontal swipes
+    focus-follows-mouse max-scroll-amount="0%"
+
+    workspace-auto-back-and-forth
+}
+
+layout {
+    gaps 6
+
+    struts {
+        top -4
+        bottom 1
+        left 1
+        right 1
+    }
+    
+    center-focused-column "on-overflow"
+    background-color "transparent"
+
+    // Default width for new windows so they don't trap the horizontal ribbon
+    default-column-width { proportion 0.5; }
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    focus-ring {
+        width 1
+        active-gradient from="#ffffffff" to="#00000000" angle=45 
+        inactive-color "#595959aa"
+    }
+
+    insert-hint {
+        off
+    }
+
+    // TURNED OFF SHADOWS: Saves up to 40% iGPU draw overhead during movement
+    shadow {
+        off
+    }
+}
+
+// ----------------------------------------------------------------------------
+// HIGH-PERFORMANCE ANIMATIONS (Zero-Lag Easing Curves)
+// ----------------------------------------------------------------------------
+animations {
+    // ------------------------------------------------------------------------
+    // TOUCHPAD & GESTURE MOVEMENTS
+    // ------------------------------------------------------------------------
+
+    // Lower stiffness allows horizontal scrolling to glide smoothly between columns
+    // without snapping back or feeling stuck on a single window
+    horizontal-view-movement {
+        spring damping-ratio=1.0 stiffness=300 epsilon=0.0001
+    }
+
+    workspace-switch {
+        spring damping-ratio=1.0 stiffness=400 epsilon=0.0001
+    }
+
+    overview-open-close {
+        spring damping-ratio=1.0 stiffness=1400 epsilon=0.001
+    }
+
+    window-movement {
+        spring damping-ratio=1.0 stiffness=400 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=1.0 stiffness=1400 epsilon=0.001
+    }
+
+    // ------------------------------------------------------------------------
+    // UI EVENTS (Ultra-fast / instant window open & close)
+    // ------------------------------------------------------------------------
+
+    window-open {
+        duration-ms 50
+        curve "ease-out-quad"
+    }
+
+    window-close {
+        duration-ms 40
+        curve "ease-out-quad"
+    }
+
+    config-notification-open-close {
+        duration-ms 80
+        curve "ease-out-quad"
+    }
+
+    screenshot-ui-open {
+        duration-ms 80
+        curve "ease-out-quad"
+    }
+}
+
+// ----------------------------------------------------------------------------
+// WORKSPACE DEFINITIONS
+// ----------------------------------------------------------------------------
+
+workspace "browser"
+workspace "vscode"
+workspace "general"
+workspace "special"
+
+

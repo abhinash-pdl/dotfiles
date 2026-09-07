@@ -1,0 +1,6 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export LIBSEAT_BACKEND:seatd
+SETUVAR __fish_initialized:4300
+SETUVAR fish_greeting:\x1d
+SETUVAR fish_user_paths:/home/avinas/\x2eopencode/bin\x1e/home/avinas/\x2ecargo/bin\x1e/home/avinas/go/bin\x1e/usr/bin\x1e/usr/sbin\x1e/home/avinas/\x2elocal/bin\x1e/opt/qt6/bin\x1e/usr/local/bin\x1e/opt/rustc/bin\x1e/usr/local/sbin\x1e/usr/local/go/bin\x1e/home/avinas/\x2espicetify

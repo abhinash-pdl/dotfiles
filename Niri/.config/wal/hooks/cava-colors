@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""
+Generate cava theme from current pywal colors
+Updates the main cava config file for live reloading
+"""
+
+import json
+import os
+import sys
+import re
+from pathlib import Path
+
+def main():
+    # Get pywal cache directory
+    wal_cache = Path.home() / ".cache/wal"
+
+    # Read current colors
+    colors_file = wal_cache / "colors.json"
+    if not colors_file.exists():
+        sys.stderr.write(f"Error: {colors_file} not found\n")
+        return 1
+
+    try:
+        with open(colors_file) as f:
+            wal_colors = json.load(f)
+    except Exception as e:
+        sys.stderr.write(f"Error reading colors: {e}\n")
+        return 1
+
+    # Extract colors
+    special = wal_colors.get("special", {})
+    colors = wal_colors.get("colors", {})
+
+    foreground = special.get("foreground", "#FFFFFF")
+
+    # Get 6 colors for gradient
+    gradient_colors = [
+        colors.get("color1", "#FF0000"),
+        colors.get("color2", "#FF6600"),
+        colors.get("color3", "#FFAA00"),
+        colors.get("color4", "#00AA00"),
+        colors.get("color5", "#0066FF"),
+        colors.get("color6", "#AA00FF"),
+    ]
+
+    # Get 8 colors for horizontal gradient
+    horizontal_colors = [
+        colors.get("color0", "#000000"),
+        colors.get("color1", "#FF0000"),
+        colors.get("color2", "#FF6600"),
+        colors.get("color3", "#FFAA00"),
+        colors.get("color4", "#00AA00"),
+        colors.get("color5", "#0066FF"),
+        colors.get("color6", "#AA00FF"),
+        colors.get("color7", "#FFFFFF"),
+    ]
+
+    # Read main config
+    cava_config = Path.home() / ".config/cava/config"
+    try:
+        with open(cava_config) as f:
+            config_content = f.read()
+    except Exception as e:
+        sys.stderr.write(f"Error reading config: {e}\n")
+        return 1
+
+    # Generate new color section
+    color_section = f"""[color]
+
+# Background transparent, foreground from pywal
+background = default
+foreground = '{foreground}'
+
+# Vertical gradient
+gradient = 1
+gradient_color_1 = '{gradient_colors[0]}'
+gradient_color_2 = '{gradient_colors[1]}'
+gradient_color_3 = '{gradient_colors[2]}'
+gradient_color_4 = '{gradient_colors[3]}'
+gradient_color_5 = '{gradient_colors[4]}'
+gradient_color_6 = '{gradient_colors[5]}'
+
+# Horizontal gradient
+horizontal_gradient = 1
+horizontal_gradient_color_1 = '{horizontal_colors[0]}'
+horizontal_gradient_color_2 = '{horizontal_colors[1]}'
+horizontal_gradient_color_3 = '{horizontal_colors[2]}'
+horizontal_gradient_color_4 = '{horizontal_colors[3]}'
+horizontal_gradient_color_5 = '{horizontal_colors[4]}'
+horizontal_gradient_color_6 = '{horizontal_colors[5]}'
+horizontal_gradient_color_7 = '{horizontal_colors[6]}'
+horizontal_gradient_color_8 = '{horizontal_colors[7]}'
+
+# Blend direction
+blend_direction = 'up'
+
+# use theme file instead of defining colors in this file
+# themes are located in $HOME/.config/cava/themes
+; theme = 'none'"""
+
+    # Replace [color] section or insert it
+    if '[color]' in config_content:
+        # Find and replace the color section
+        pattern = r'\[color\].*?(?=\n\[|$)'
+        config_content = re.sub(pattern, color_section, config_content, flags=re.DOTALL)
+    else:
+        # Append color section before [smoothing]
+        if '[smoothing]' in config_content:
+            config_content = config_content.replace('[smoothing]', color_section + '\n\n[smoothing]')
+        else:
+            config_content += '\n\n' + color_section
+
+    # Write updated config
+    try:
+        with open(cava_config, 'w') as f:
+            f.write(config_content)
+        sys.stderr.write(f"Successfully updated cava config\n")
+        return 0
+    except Exception as e:
+        sys.stderr.write(f"Error writing config: {e}\n")
+        return 1
+
+if __name__ == "__main__":
+    exit(main())

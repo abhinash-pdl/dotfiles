@@ -1,0 +1,251 @@
+* {
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+notificationwindow, blankwindow, .blank-window, .floating-notifications {
+  background: transparent;
+}
+
+/* panel */
+.control-center {
+  background: rgba(28, 28, 32, 0.75);
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.control-center .control-center-list {
+  background: transparent;
+}
+
+.control-center .control-center-list-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* title */
+.widget-title {
+  padding: 14px 16px 8px 16px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.widget-title > label {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.widget-title > button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  padding: 2px 2px;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.widget-title > button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* buttons grid - GNOME style wide cards */
+/* .widget-buttons-grid {
+  padding: 2px 2px 2px 2px;
+  margin: 0;
+  background: transparent;
+} */
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  border: none;
+  box-shadow: none;
+  font-size: 22px;
+  min-width: 0px;
+  min-height: 34px;
+  padding: 8px 0;
+  margin: 6px;
+  transition: background 0.15s ease;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button label {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked label {
+  color: #80cbc4;
+}
+
+/* volume and backlight sliders */
+.widget-volume,
+.widget-backlight {
+  padding: 4px 16px;
+  background: transparent;
+}
+
+.widget-volume label,
+.widget-backlight label {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+trough {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  min-height: 4px;
+}
+
+trough highlight {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  min-height: 4px;
+}
+
+trough slider {
+  background: white;
+  border-radius: 50%;
+  min-width: 11px;
+  min-height: 11px;
+  border: none;
+  box-shadow: none;
+}
+
+/* notifications */
+.notification-row {
+  background: none;
+  outline: none;
+  padding: 2px 10px;
+}
+
+.notification-row .notification-background .notification {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.notification-row .notification-background .notification.normal {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.notification-row .notification-background .notification.critical {
+  border-left: 2px solid rgba(239, 83, 80, 0.8);
+  background: rgba(239, 83, 80, 0.07);
+}
+
+.notification-row .notification-background .notification .notification-default-action {
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.87);
+  transition: background 0.15s ease;
+}
+
+.notification-row .notification-background .notification .notification-default-action:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.notification-row .notification-background .notification .notification-content .summary {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.notification-row .notification-background .notification .notification-content .time {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-right: 28px;
+}
+
+.notification-row .notification-background .notification .notification-content .body {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 2px;
+}
+
+.notification-group .notification-group-headers .notification-group-header {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.notification-group .notification-group-headers .notification-group-icon {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.notification-group.collapsed.not-expanded {
+  opacity: 0.4;
+}
+
+/* close button */
+.close-button {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.35);
+  min-width: 20px;
+  min-height: 20px;
+  margin-top: 6px;
+  margin-right: 6px;
+  box-shadow: none;
+  padding: 0;
+  transition: background 0.15s ease;
+}
+
+.close-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* inline reply */
+.inline-reply-entry {
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.87);
+  caret-color: rgba(255, 255, 255, 0.87);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+}
+
+.inline-reply-button {
+  margin-left: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.inline-reply-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* action buttons */
+.notification-action > button {
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2px;
+  font-size: 12px;
+}
+
+.notification-action > button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}

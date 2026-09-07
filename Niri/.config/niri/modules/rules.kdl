@@ -1,0 +1,164 @@
+// =============================================================================
+// NIRI WINDOW RULES & WORKSPACE MANAGEMENT
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// 1. Global Appearance
+// -----------------------------------------------------------------------------
+
+// Rounded corners and surface clipping
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+// Inactive window dimming / transparency
+window-rule {
+    match is-active=false
+    opacity 0.9
+}
+
+// -----------------------------------------------------------------------------
+// 2. Workspace Assignments & Window Layouts
+// -----------------------------------------------------------------------------
+
+// Web browsers & documentation app workspace
+window-rule {
+    match app-id=r#"^(firefox|google-chrome|obsidian)$"#
+   // open-maximized true
+    open-on-workspace "browser"
+}
+
+// Development workspace
+window-rule {
+    match app-id=r#"^code$"#
+    open-maximized true
+    open-on-workspace "vscode"
+}
+
+// Firefox Picture-in-Picture
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// -----------------------------------------------------------------------------
+// 3. Native GTK, Qt & XWayland Floating Sizing Rules
+// -----------------------------------------------------------------------------
+
+// Standard file pickers, dialogs & configuration windows
+window-rule {
+    match title=r#".*(Open|Save|Select|File|Folder).*"#
+    match title=r#".*(Dialog|Properties|Preferences|Settings|Rename|Confirm).*"#
+    open-floating true
+    max-width 1200
+    max-height 900
+}
+
+// GTK standard file chooser dialogs & Zenity
+window-rule {
+    match app-id=r#"^(org\.gtk\.FileChooserDialog|zenity)$"#
+    open-floating true
+    max-width 1200
+    max-height 900
+}
+
+// App splash screens, popups, and extension popovers
+window-rule {
+    match title=r#".*(Splash|About|Progress|Welcome to).*"#
+    match title=r#".*(Sign in - Google Accounts|Extension:).*"#
+    open-floating true
+}
+
+// Authentication, Polkit, and Security Dialogs
+window-rule {
+    match title=r#".*Authentication.*"#
+    match app-id=r#"^(polkit-gnome-authentication-agent-1|org\.kde\.polkit-kde-authentication-agent-1|lxqt-policykit-agent|pinentry-.*)$"#
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"org\.keepassxc\.KeePassXC"# title=r#".*Auto-Type.*"#
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"Bitwarden"# title=r#".*unlock.*"#
+    open-floating true
+}
+
+// -----------------------------------------------------------------------------
+// 4. System Control Utilities (Native Internal Sizing)
+// -----------------------------------------------------------------------------
+
+window-rule {
+    match app-id=r#"^(nm-connection-editor|blueman-manager|pavucontrol|calculator)$"#
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"steam"# title=r#".*(Friends|Settings|Properties).*"#
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"^(Apache NetBeans IDE.*)$"#
+    open-floating true
+}
+
+// -----------------------------------------------------------------------------
+// 5. Explicitly Fixed Sized Floating Utilities
+// -----------------------------------------------------------------------------
+
+// Spotify
+window-rule {
+    match app-id=r#"^(Spotify|spotify)$"#
+    open-floating true
+    default-column-width { fixed 1200; }
+    opacity 0.8
+}
+
+// CopyQ Clipboard Manager
+window-rule {
+    match app-id=r#"^(com\.github\.hluk\.copyq)$"#
+    open-floating true
+    default-column-width { fixed 550; }
+}
+
+// Floating Terminals
+window-rule {
+    match app-id=r#"^footfloat$"#
+    open-floating true
+    default-column-width { fixed 1000; }
+}
+
+window-rule {
+    match app-id=r#"^footfloat1$"#
+    open-floating true
+    default-column-width { fixed 400; }
+}
+
+// WhatsApp Desktop
+window-rule {
+    match app-id=r#"^WhatsApp Desktop$"#
+    open-floating true
+    default-column-width { fixed 1200; }
+}
+
+// -----------------------------------------------------------------------------
+// 6. System & Background Overrides
+// -----------------------------------------------------------------------------
+
+// XWayland Video Bridge Fix
+window-rule {
+    match app-id=r#"^(xwaylandvideobridge)$"#
+    opacity 0.0
+    open-focused false
+}
+
+// SwayNC Notification Center
+window-rule {
+    match app-id=r#"^(swaync-control-center)$"#
+    opacity 0.8
+}
+
