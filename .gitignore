@@ -58,3 +58,6 @@
 .config/Code/CachedExtensionVSIXs/
 .config/vesktop/sessionData/
 .config/vesktop/sessionData/
+.config/copyq/
+.config/Code/User/globalStorage/state.vscdb.backup
+**/vencordDesktopRenderer.js
